@@ -1,0 +1,2995 @@
+*Leo Laporte* Bandwidth for this WEEK in TECH is provided by AOL Radio
+at aol.com/podcasting.
+
+This is TWiT; this WEEK in TECH, episode 192 for April 26, 2009, Kipple
+And Bits.
+
+This WEEK in TECH is brought to you by; audible.com. Sign up for the
+Platinum plan and get two free books. Go to audible.com/twit2. And
+follow Audible on Twitter, user ID audible_com; and by GoToMyPC, unchain
+yourself from your office PC and access it from anywhere with GoToMyPC.
+For your free thirty-day trial, visit gotomypc.com/twit.
+
+It’s time for TWiT, the show that covers all things – God, I don’t even
+know what we cover, all things technological and we are going to have a
+massive TWiT today. And I am thrilled about it. Starting off in SkypeBox
+number two, Mr. *Patrick Norton*, ladies and gentlemen, my good buddy
+and pal, hey Patrick.
+
+*Patrick Norton* How is it going?
+
+*Leo Laporte* It’s going great, it’s great to have you back on, from the
+Techzilla show on Revision3 and my old co-host on The Screen Savers, he
+is in the garage today.
+
+*Patrick Norton* Always in the garage.
+
+*Leo Laporte* Sarah kick you out, put you in the garage, is that it?
+
+*Patrick Norton* No, it’s the farthest I can get from the toddler
+without having to sit in the car.
+
+*Leo Laporte* Yes, that actually makes perfect sense to me. Also, with
+us via Skype, Mr. *Jason Calacanis*. Hello, Jason, how are you today?
+
+*Jason Calacanis* I am having the greatest week of my life. Great to see
+everybody, peace to all my peoples in the chat room.
+
+*Leo Laporte* Peace to my homies.
+
+*Jason Calacanis* To all the haters out there --
+
+*Leo Laporte* Oh come on, there are no haters.
+
+*Jason Calacanis* No love for you. No love for the haters.
+
+*Leo Laporte* Nothing but people who love Mr. *Jason Calacanis*. Also
+here, I am very pleased, he’s back from his days breathing fire, the
+fire eating *Brian Brushwood*……..
+
+*Brian Brushwood* Howdy
+
+*Leo Laporte* …from shwood.com. Brian is the host of Scam School on
+Revision3 and the last time he was here, he said we need a cheap red
+wine, so we got one for you.
+
+*Brian Brushwood* Thank goodness.
+
+*Leo Laporte* Could you have possibly bought a bigger laptop computer?
+
+*Brian Brushwood* Oh yes, this is?
+
+*Catherine Hall* Yes, I mean, how heavy is this?
+
+*Brian Brushwood* It’s like eight pounds. It’s a desktop replacement.
+
+*Leo Laporte* Poor Catherine.
+
+*Catherine Hall* Do you call it the battleship?
+
+*Brian Brushwood* I should call it the battleship. This is my
+compromise, because this is like ………
+
+*Leo Laporte* Call it Capricorn.
+
+*Brian Brushwood* I spend so much time on the road that my wife doesn’t
+want me to come home and ignore everyone to play games. So I figure I
+get a gaming laptop, get my game on the road.
+
+*Leo Laporte* That’s one of those DELL FX Gaming…..
+
+*Brian Brushwood* Yes, the Gateway.
+
+*Leo Laporte* The Gateway, I mean.
+
+*Brian Brushwood* I actually was embarrassed about -- that it was a
+Gateway, I covered up the Gateway logo.
+
+*Leo Laporte* I noticed that, you put the TWiT logo where the Gateway
+logo belongs? And there’s a sideways Apple, I don’t even know what
+that’s all about.
+
+*Brian Brushwood* That was – somebody just – that was a sneak attack,
+somebody just…
+
+*Leo Laporte* Slapped it on?
+
+*Brian Brushwood* ……..slapped it on there.
+
+*Leo Laporte* Scam School, great show, great way to learn how to win bar
+bets, essentially.
+
+*Brian Brushwood* Yes, manipulate people, get what you want.
+
+*Leo Laporte* Yes, also here, I’m very pleased to say, *Catherine Hall*,
+my good friend and photographer. Catherine is a specialist in taking
+pictures of people, but she is also a geek, as any digital photographer
+must be these days, at catherinehall.net. Great to see you.
+
+*Catherine Hall* Thank you.
+
+*Leo Laporte* And finally, last but not the least, The Bird Brain
+herself, ladies and gentlemen, Miss Kirsten Sanford.
+
+*Dr. Kiki (Kirsten Sanford)* Howdy
+
+*Leo Laporte* I said it right.
+
+*Dr. Kiki (Kirsten Sanford)* You did.
+
+*Leo Laporte* I paused, I thought, no consonants and I got it right.
+
+*Dr. Kiki (Kirsten Sanford)* Good.
+
+*Leo Laporte* Kiki, you’re actually a good person to have on this day
+because the big story as we record, and it is a developing story is the
+story of this swine flu.
+
+*Dr. Kiki (Kirsten Sanford)* Yes, it’s huge right now.
+
+*Leo Laporte* And it’s really interesting to watch people’s reaction to
+this. Some people like Colleen go, oh yeah, just another one of those
+stories.
+
+*Dr. Kiki (Kirsten Sanford)* Whatever.
+
+*Leo Laporte* She said I’m worried about the killer bees but I guess now
+I can worry about the swine flu. She mocks it. But then there are those
+of us like me, who read all the books about the 1918 pandemic that
+killed 10 million people. And I’m thinking……
+
+*Dr. Kiki (Kirsten Sanford)* Right.
+
+*Leo Laporte* …..could this be the one.
+
+*Dr. Kiki (Kirsten Sanford)* Well, there could be a pandemic and the CDC
+and other – and The World Health Organization have been looking out for
+the next big pandemic and the way that we have international travel and
+just the way that our world works we’re so much more connected and
+people come across -- into contact with so many more people on a daily
+basis now. Our schools are crowded, and that’s another thing, they’ve
+shut down schools in Mexico as a result of this outbreak……….
+
+*Leo Laporte* They are shutting down schools in Texas now.
+
+*Dr. Kiki (Kirsten Sanford)* ……and there’s a school in New York City, I
+think they are shutting down a school there and so it’s scary and there
+is a reason to mock the story and there is a reason to take it very
+seriously.
+
+*Leo Laporte* We just don’t know yet.
+
+*Dr. Kiki (Kirsten Sanford)* And that’s right, we just don’t know. But
+the thing about the swine flu that is scarier than the avian flu is the
+fact that it comes from a mammal. So, the jump in the avian flu, in
+order for the flu to become a pandemic coming from birds to people is
+that it would have to switch to become contagious among people. And so
+that’s a major mutation, and that’s not necessarily something that – it
+might take place in a bird but then that bird doesn’t come in contact
+with the person and so it could never make it to people, or swine or
+whatever. But the fact that this is a flu coming from a very close
+relative of the human species makes it a lot more dangerous and it’s –
+and the sub-types that it’s made up of, this H1N1 sub-type, it’s very
+contagious, it’s contagious, it’s a mammalian flu, and that’s two out of
+three of the major factors, when an organization like the CDC is looking
+at it to determine whether or not it might become a pandemic, and so
+this is something that the CDC is taking very seriously. And the CDC, I
+will be honest here, our government is not ready, our health system is
+not ready to do anything.
+
+*Leo Laporte* There are no vaccines. I heard a report that there is one
+company that can make them, they say, in double -- in half the time, it
+takes them half the time, that’s still 13 weeks.
+
+*Dr. Kiki (Kirsten Sanford)* Right, and so by that time, the pandemic
+can already have taken its course, they’re saying that this flu is
+showing up in two days, maybe as long as five days to show up in a
+person to..
+
+*Leo Laporte* Well, I am watching, there is Google Maps which is great,
+there are number of – I put a link in the Show Notes to a Mashable
+Article that says how to follow this, and you can use the World Health
+Organization or the Centers for Disease Control, but there is also a
+great Google Map, and I’ve been looking at this Google Map, and every
+time I look, there are more dots on the Map. Originally it was Mexico,
+then North America, then Europe, and now I am seeing in Columbia, I am
+seeing in New Zealand, some outbreaks in Europe, and even in the Middle
+East, and in this day and age, with – of air travel…
+
+*Dr. Kiki (Kirsten Sanford)* Yes.
+
+*Leo Laporte* This stuff could spread very quickly.
+
+*Dr. Kiki (Kirsten Sanford)* Yes, and that’s something they have known
+for several years, is that because we are, because of air travel and our
+ability to be international within a few hours, these things can spread
+so easily, and the biggest protection that you can have for yourself is
+to wash your hands, that’s the best thing you can do.
+
+*Leo Laporte* What about those masks?
+
+*Dr. Kiki (Kirsten Sanford)* Yes, the masks help.
+
+*Leo Laporte* Do they help?
+
+*Dr. Kiki (Kirsten Sanford)* Uh-huh, absolutely, if you…
+
+*Leo Laporte* They are like the surgical masks, the cheap ones you get
+at Long’s, those are okay?
+
+*Dr. Kiki (Kirsten Sanford)* Yes, because the airborne particles, when
+people sneeze or cough, those particles end up in the air and so if you
+know you’re going to be out around people, you’re going to, maybe a
+school, or you’re going to a hospital, where sick people go, maybe you
+want to put on a mask to protect yourself.
+
+*Leo Laporte* I am going to start wearing one right now, in fact what
+are you doing in my room? Get out of here, all of you.
+
+*Dr. Kiki (Kirsten Sanford)* I washed my hands, really.
+
+*Brian Brushwood* I have heard the opposite, so this is news to me. What
+I heard was, is that wearing a mask was not a good idea, it gave you a
+false sense of security and that the reason that you see them wearing
+them in surgeries is not to keep something from getting into their
+mouth, but to keep them from coughing, and…
+
+*Dr. Kiki (Kirsten Sanford)* It’s to get out, yes.
+
+*Leo Laporte* So a mask is even more useful if you are sick.
+
+*Dr. Kiki (Kirsten Sanford)* Yes, if you’re…
+
+*Brian Brushwood* That’s what I would imagine.
+
+*Dr. Kiki (Kirsten Sanford)* If you are sick, it’s much more helpful, I
+mean the thing is, if you’re going to wipe your nose with your hand or,
+that puts bacterial – the viral, not bacterial, but the viral particles
+onto your hand.
+
+*Leo Laporte* This was more airborne than normal, is that what I am
+reading, is some – I can’t really quite follow all this stuff.
+
+*Dr. Kiki (Kirsten Sanford)* I don’t know, necessarily that it’s more
+airborne than normal.
+
+*Leo Laporte* There is a lot of hysteria.
+
+*Dr. Kiki (Kirsten Sanford)* If it is a flu that gets into the lungs and
+the mucous membranes, I mean, that’s where, I mean, different viruses
+will get into different tissues in different ways.
+
+*Leo Laporte* Right.
+
+*Dr. Kiki (Kirsten Sanford)* And so, this flu might be specifically
+multiplying within the mucous membranes, and so the – if that’s where it
+is, then you’re going to be sneezing, and air particles are going to
+come out, those are going to contain viral particles, and then it’s air
+borne. You have these aerosolized particles – aerosolized little bits of
+things flying around everywhere.
+
+*Leo Laporte* And the reason we’re taking this seriously is because 20
+people have died in Mexico.
+
+*Dr. Kiki (Kirsten Sanford)* Yes.
+
+*Leo Laporte* It is fatal for some, nobody has died yet outside of
+Mexico, I am not sure why that is.
+
+*Dr. Kiki (Kirsten Sanford)* And I don’t know, something that I haven’t
+seen is that the people who are dying are probably immune system
+compromised to begin with.
+
+*Leo Laporte* Yes, and what’s interesting they tend to be younger people.
+
+*Patrick Norton* Quick question.
+
+*Leo Laporte* Yes, *Patrick Norton*.
+
+*Patrick Norton* I mean, because I – my wife’s been very concerned about
+this because we have a toddler, it’s starting to show up, a minor panic
+in some of my relatives, I mean, can we put this in the perspective
+compared to the 1918 pandemic, I mean, because the numbers in the
+pandemic vary between 50 and 100 million were killed, the numbers, as
+the people doing – epidemiologists doing the study, as they get more
+contemporary, they scale the numbers up. They don’t know if it started
+in Fort Riley, like somewhere in Kansas or somewhere in Asia, the
+records aren’t tight enough to know what it is, they did say that it was
+a cytokine storm, an overreaction of the body’s immune system that
+caused the deaths more so than the actual flu itself.
+
+But we are talking about 5 to 20% of the people, I think probably closer
+to 5% of the people who contracted the disease, and something like a
+quarter of the United States at one point or – not disease, the
+influenza, like 25, 20% of the U.S. population had it, like 2 to 5% of
+the population died from it. What are we talking about, because
+everybody’s like, 20 people have died in Mexico, and it’s like, dude,
+like 800 people…
+
+*Dr. Kiki (Kirsten Sanford)* It’s 86 actually, according to…
+
+*Leo Laporte* 86, is it now?
+
+*Dr. Kiki (Kirsten Sanford)* 86.
+
+*Patrick Norton* 86, okay…
+
+*Leo Laporte* But there haven’t been that many, I mean if you look at
+the Map, there are not that many points on the Map yet, so…
+
+*Dr. Kiki (Kirsten Sanford)* What was your question?
+
+*Patrick Norton* Yes, but I mean, we are talking about the United
+States, like a typical year is 44,000 traffic fatalities.
+
+*Leo Laporte* Right.
+
+*Patrick Norton* Divided by 365, so let’s call that 120 are going to die
+today in car accidents in the United States, 20 – 86 people have died in
+Mexico, you know what I am saying?
+
+*Dr. Kiki (Kirsten Sanford)* Uh-huh.
+
+*Patrick Norton* Like I am trying to understand what percentage of the
+people are dying of this? Is it spreading to the – have the
+epidemiologists that are working on it, because they are like, the
+Center for Disease Control is like, whoo, proof that we need to be
+funded, yes, and that [indiscernible], I mean, I tease, like I happen to
+love the idea that they are, I wish that they were as well funded as
+other branches of government that have failed us incredibly in the last
+couple of years, but, so they’re flying in experts to try to start
+tracking this. Do we even know in Mexico, how many people, what
+percentage of people have actually died, and how many, what percentage
+of the population has it? Because it just seems like, it’s a 24 hour
+news cycle, tune in to the tail end of the 5’O Clock broadcast.
+
+*Leo Laporte* Some of it could be that, Patrick, but there is, because
+of the pandemic of 1918, there is a legitimate concern, and people,
+health officials are very concerned that this could be the one, In fact
+I have read an article that said, it’s not a question of when, it’s
+going to happen, we just don’t know if it’s this one.
+
+*Dr. Kiki (Kirsten Sanford)* Yes, it will happen, yes, we don’t know if
+it’s this one, I mean, you are right, like we said before, there is a
+certain aspect of it that is the 24 hour news cycle, and these news
+agencies are grabbing on something that’s not war related to be able to
+talk about and so they are like, yes…
+
+Unknown Speaker Or finance related…
+
+*Dr. Kiki (Kirsten Sanford)* Or finance related, it’s something
+completely different…
+
+*Leo Laporte* It’s bad news that doesn’t have anything to do with the
+other bad news.
+
+*Dr. Kiki (Kirsten Sanford)* Right, but at the same…
+
+*Leo Laporte* Fresh bad news. Quick, get the graphics department going.
+
+*Dr. Kiki (Kirsten Sanford)* But at the same time this is something that
+we do need to be concerned about. I don’t think it’s being going long
+enough for them to really – I mean, maybe the CDC does have numbers that
+they haven’t completely reported yet. Maybe they do know more about it
+than they are letting out.
+
+Unknown Speaker Is there any numbers or statistics on the fatality rate
+of those who catch the disease. I mean, are we looking at the disease as
+a death sentence or…
+
+*Leo Laporte*
+
+A lot of people survive it in the U.S. In fact most people have survived in the U.S. All the fatalities are in Mexico, right.
+
+*Dr. Kiki (Kirsten Sanford)* Yeah, most people survive. And the thing
+that you want to -- you hope for is that you don’t get a flu that will
+be dangerous for the average person. So we know that the flu is
+dangerous for babies and for the elderly, people who have weakened
+immune systems. People who are immune compromised. Those - that’s who
+most flus, the yearly flu, is dangerous for. And that’s just kind of
+like, okay, that’s just -- we know that. But what we don’t want is for
+all of us in this room, who -- we assume we’re fine.
+
+*Leo Laporte* Important people. *Dr. Kiki (Kirsten Sanford)* The
+important people.
+
+Unknown Speaker Me.
+
+*Patrick Norton* Well, that’s what interesting about the…
+
+*Dr. Kiki (Kirsten Sanford)* Yeah, you don’t want – you don’t want like
+12 and 13 and 14 year olds getting sick and dying from this flu and
+that’s when it becomes dangerous.
+
+*Leo Laporte* That’s what was interesting about the pandemic was that it
+affected young people, that it was mostly soldiers, initially, who died
+and that was what was so scary. I guess the high…
+
+*Patrick Norton* They also – but also the soldiers at the time, the
+soldiers of the time, they were post World War I. the health conditions
+of the military around the world were pretty deplorable. One of the most
+striking statistics for an army that was brutally impacted was India,
+which would have been like 20% of the Indian Army, I believe, died of
+it. But the other thing is, the armies are cleaner and healthier and in
+better shape these days, is I think something that – you know what I
+mean, when people sort of like…
+
+*Leo Laporte* Everything I read said it wasn’t hygiene issues, it was
+because they didn’t have the immunities that the older folks had.
+
+*Patrick Norton* Well why would they not have the…
+
+*Leo Laporte* Because they hadn’t exposed to earlier incidences of flu
+which gave people over 40 some form of protection that the young --
+people under 40 didn’t have. And what is a little scary at is that the
+same thing is happening with this particular Swine Flu, that the people
+who are dying are younger. So that’s one of the many reasons of cause
+for concern.
+
+I mean the story, the text -- we should talk about the text story and
+the text story partly is that you will see on Twitter and other sources
+a lot of hysteria and craziness. Adam Curry couldn’t be with us on the
+show today but in his place *Jason Calacanis*. Jason, is this all one
+big conspiracy? Was it the Federal Government that designed this flu?
+
+*Jason Calacanis* No, I’m sorry. I have a job, I can’t waste my time
+with conspiracy theories. I know Adam has no job.
+
+*Leo Laporte* I think they did a special edition of no agenda this
+morning to cover the conspiracy.
+
+*Jason Calacanis* Oh God.
+
+*Leo Laporte* Infowars has already published an article saying…
+
+*Jason Calacanis* Too much time on your hands. People who have jobs
+don’t come up with these conspiracy theories, somehow. You know what’s
+interesting, in Japan…
+
+*Leo Laporte* You just came back from Asia, yeah.
+
+*Jason Calacanis* Yeah, and I’m always shocked in Japan, like I was in a
+meeting with somebody and the translator had a mask on the entire
+meeting. This is an hour and a half, like, high level meeting and I
+guess she happened to be sick that day. She wore the mask and I’m like,
+she’s talking to me, I feel like I’m talking to like a storm trooper or
+something, because I can’t see her lips moving. I have no idea what she
+looks like but she’s translating for an hour and half in the meeting.
+And I was like wow, that’s really interesting, I mean they are
+incredibly courteous, they wear these not to protect themselves but to
+contain themselves from infecting other people.
+
+*Leo Laporte* Yeah I wish...
+
+*Brian Brushwood* You had also just travelled through two airports and
+across the world in a little tiny tube, so she may have been wearing it
+to protect herself.
+
+*Jason Calacanis* From me, it’s not quite possible. Yeah but you see
+this pretty often in all of the places, Japan and in Seoul. They wear
+them sometimes also from pollution outside but it’s mainly for people
+who are sick. And I think I’m going to start wearing them on planes
+because I had friend who was a doctor like five years ago and she’s
+like, there’s going to be another pandemic, and all that stuff, you
+should wear a surgical mask. If you think you look silly just throw your
+blanket over your head and go to sleep.
+
+*Leo Laporte* On a plane you should wear one to protect your self.
+
+*Jason Calacanis* Yeah, exactly and these things costs like a dollar or
+two or three, so I mean, I want to get -- I’m going to try find a domain
+name and start selling these things, because that’s got to be the
+greatest business model ever…
+
+*Leo Laporte* I actually wore one on the plane to Egypt for that very
+reason, I was a little nervous about that. So, yeah…
+
+*Jason Calacanis* Probably because you’re getting old.
+
+*Brian Brushwood* Just to speak directly to the tech angle, I think it’s
+amazing what they’re doing with the Google Maps, you have -- actually
+being able to see the outbreaks and I wonder, there’s a – you talk about
+the signal to noise ratio, and obviously we’re way more interconnected
+and obviously knowledge and communication and technology makes this
+possible to a degree that was not possible in the early 20th century and
+I wonder if, is the mere fact of our instant communication, to instantly
+know where the outbreaks are and what areas need to take high levels of
+precaution, if that alone will be enough to stop it, or the flip-side
+is, as you mentioned, Twitter hysteria. You’ve got the signal and you’ve
+got the noise so which is going to – which is – is technology going to
+end up being a boom or a bust?
+
+*Leo Laporte* Very interesting, yeah, very good point, yeah. I think
+people are smart enough to know that what you see on Twitter is just
+chatter. Literally…
+
+*Jason Calacanis* It’s a starting point. It’s a staring point.
+
+*Leo Laporte* Yeah.
+
+*Jason Calacanis* And then you go do your research on there. Obviously,
+I saw it the other night and I was like, what the heck is this flu
+stuff, and then I worked backwards…
+
+*Leo Laporte* But we’re intelligent. I mean. No, no, no, that was the
+wrong word.
+
+*Brian Brushwood* Not like those other people, not like those morons.
+
+*Leo Laporte* No, no, but we’re sophisticated in terms of understanding
+that maybe many people, especially new to, Catherine, you’re new to
+Twitter. Do you know enough to that some of it is BS?
+
+*Catherine Hall* Yeah, I mean there’s certainly, it will instigate me to
+look for that online. So, if I see something on Twitter that…
+
+*Leo Laporte* That’s where it’s useful.
+
+*Catherine Hall* It’s an interesting point, well I think, well, okay,
+I’m going to look into this, so…
+
+*Leo Laporte* I have already created FriendFeed and Twitter searches on
+swine flu because I know that a lot of good traffic, useful links and so
+forth, and most of what I know about this swine flu come from links that
+I have picked up, but I don’t just say, oh yeah, that person said it was
+a conspiracy, it must be true but you wouldn’t don’t that.
+
+*Catherine Hall* No. Well and I think another thing to, just on the
+positive note of it is I wouldn’t have been exposed to it as early as I
+was if I wasn’t, that’s how I learned about it was through…
+
+*Leo Laporte* It is the pulse of the – it is now the pulse of our
+brains, isn’t it.
+
+*Catherine Hall* It’s more of…
+
+*Jason Calacanis* You know what the problem with it is though now. I had
+breakfast with Evan Williams in Biz Wednesday or Thursday and when you
+click on one of these things now everybody knows, wow people are
+clicking on the side bar on swine flu, therefore all the marketers now
+are marketing to whatever the big search terms are. So, the same person,
+like they’re…
+
+*Leo Laporte* Oh, no.
+
+*Jason Calacanis* Fifteen minutes, yes more information on swine flu.
+
+*Leo Laporte* Oh, that’s terrible.
+
+*Jason Calacanis* And all the blogs and everything – just the way they
+sort of follow Google trends or whatever and anyhow I’d say it’s fair
+game, but you don’t get the actually legitimate chatter, what you are
+getting now is. Trend service says this service is trending and they
+have created a page on it.
+
+*Leo Laporte* Right.
+
+*Jason Calacanis* So, it’s a…
+
+*Leo Laporte* You know I created a Twitter account for my mom, which she
+promptly had me delete, but I tried. And she said, but people the people
+will follow me, I said yeah, she said I don’t want that. So, -- but
+because she created a new account she got, it’s interesting. She got a
+completely different interface than me. I know some people have it. It
+had Trends right on the front page, it had a search box on the front
+page. See I don’t have that on my account, only some people have that on
+their account.
+
+*Jason Calacanis* That’s because they are trying to scale the service
+and if they have too many people searching and clicking on those Trends,
+it’s database hits and what not, so they are just trying to roll it out.
+
+*Leo Laporte* That’s a really nice feature for something like this,
+that’s really great.
+
+*Jason Calacanis* Yeah, it’s a great -- next to it on the right hand
+column is all the Trends.
+
+*Leo Laporte* And you see them. I use Twitty on the iPhone and it has a
+page of Trends. I presume it’s the same. Is that information all coming
+from search.twitter.com.
+
+*Jason Calacanis* Yes, it’s API.
+
+*Leo Laporte* Okay, so it’s all the same information no matter what
+client you are using.
+
+*Jason Calacanis* Yeah.
+
+*Leo Laporte* Have you guys started playing with the Seesmic or any
+other new clients, Twitty desktop for the Mac or…
+
+*Jason Calacanis*
+
+Yeah, Seesmic desktop is very nice, I am using it, it’s legible in multiple accounts and all that stuff, it’s really light. I have been using TweetDeck for a while but that got all those kind of memory problems, it was constantly like crashing or spinning wheel of death on the Mac. I think they are cleaning it up, but it’s really interesting, they were able to raise capital for a Twitter application company.
+
+*Leo Laporte* Isn’t that amazing.
+
+*Jason Calacanis* That’s like, I think that’s a sign, it’s a bubble but
+we’re in a recession right now. So, I don’t understand.
+
+*Leo Laporte* It’s a recession bubble, don’t you know that?
+
+*Jason Calacanis* It’s a recession Twitter bubble because, in eBay when
+eBay became big there were like hundreds of business plans that were
+like, we’re going to take peoples stuff and then go put it on eBay for
+them. We are going to create insurance for eBay. We are going to create
+a payment system, paypal for eBay. When you know a service is -- and
+also that happened for Facebook, right, like Zanga and Rock You and all
+those people that are making applications and casual games for Facebook.
+So, it’s where you know you have a – a company is really worth
+something, when other companies are built around it.
+
+*Brian Brushwood* So, real quick, because I know we’re about to move on
+to something else, but I got to know from Dr. Kiki, is there something
+everybody should be doing or not be doing, like is now the time to do
+something or to wait, like for us, because I mean there is nothing that
+strikes to the heart of fear like…
+
+*Leo Laporte* I am just not going out, I am staying in. I am going to
+stay in this room, I am sealing it up and that’s it.
+
+*Brian Brushwood* But that’s your problem, because you are inviting
+people like me who travel all over, so I go out and collect the bugs and
+bring them to you.
+
+*Leo Laporte* This is the last live TWiT, everybody will be on Skype
+from now on. What should we do Kiki?
+
+*Dr. Kiki (Kirsten Sanford)* The most that you can do really is wash
+your hands and/or use the [indiscernible] type stuff to, that’s the best
+you can do because your hands come into contact with so many objects, I
+mean if you were to keep track of how many times you touch things every
+day, it’s phenomenal and all the different things that other people have
+touched, it’s out of control. And so, you want to be able to clean your
+hands, don’t touch your nose, your eyes, your mouth, try and keep away
+from…
+
+*Brian Brushwood* And the [indiscernible] is effective against the virals?
+
+*Dr. Kiki (Kirsten Sanford)* Yeah, the alcohol, or you could just pour
+pure alcohol on your hands but that’s a little…
+
+*Leo Laporte* Or drink a lot of alcohol.
+
+*Dr. Kiki (Kirsten Sanford)* I have heard two shots of Vodka gets rid of
+anything.
+
+*Brian Brushwood* Awesome, in case you swallowed the bugs.
+
+*Leo Laporte* Hold on, hold on.
+
+*Jason Calacanis* Very important chief, if you are going to use these
+things you have to have above 60% alcohol content. I’m a germaphobe.
+
+*Dr. Kiki (Kirsten Sanford)* That’s true, above 60%.
+
+*Jason Calacanis* If it’s under 60% all you do is move it around, and
+also things like fecal material and other dirt and stuff like that, if
+you don’t wash your hands it just gets moved around on your hands, I
+know that’s incredibly disgusting, people have to learn how to wash
+their hands with hot water…
+
+*Dr. Kiki (Kirsten Sanford)* At least 20 seconds.
+
+*Jason Calacanis* … to a minute, for a minute do it, please, everybody
+who shakes my hand do it, I am an absolute germaphobe, if you meet me in
+person it’s absolutely fine to not shake my hand and just sort of put
+your hand up and say hey, great to meet you.
+
+*Dr. Kiki (Kirsten Sanford)* You could also try, we can all be Japanese
+and just bow at each other.
+
+*Jason Calacanis* It’s much better, nobody should touch each others hands.
+
+*Dr. Kiki (Kirsten Sanford)* That’s the whole reason that they have the
+bowing tradition is so that they don’t shake hands, and that’s part of
+it, is not -- you don’t shake hands, you don’t transmit stuff and you
+just bow, and – yeah.
+
+*Leo Laporte* We will talk about, in just a bit, the Pirate Bay trial;
+it turns out the judge had some very suspicious connections, which may…
+
+*Patrick Norton* But they found he had no conflicts of interest, Leo.
+
+*Leo Laporte* Yeah, well. Hang on there, we are going to talk about that
+in just a second. Also, financials are out for Microsoft and Apple. Who
+do you think was the big winner in the last quarter? The one that’s
+selling the inexpensive computers, you don’t have to be cool to own or
+the one that’s selling the very expensive computers you have to be very
+cool to own. I will tell you the answer in a bit but first we are going
+to take a little break to mention *Jason Calacanis*’ very favourite
+thing in the whole wide world.
+
+*Jason Calacanis* Really. You are kidding? They’re back.
+
+*Leo Laporte* They are back, baby.
+
+*Jason Calacanis* And they are in the first block.
+
+*Leo Laporte* In the first block, because I know you want talk about
+audible.com.
+
+*Jason Calacanis* Audible, audible, audible.
+
+*Leo Laporte* Catharine, do you know about audio books, Catherine?
+
+*Catherine Hall* I am even taking a photo so I can…
+
+*Leo Laporte* She is taking a photo because she’s so excited, so she
+will remember it.
+
+*Catherine Hall* Yeah.
+
+*Jason Calacanis* Audible. Let me tell you something. You’re on a
+flight, you’re in your car, you’re wasting time and you are going to
+listen to some, like Donkey Radio and like...
+
+*Leo Laporte* That’s called a zoo.
+
+*Catherine Hall* Did you just say Donkey Radio?
+
+*Jason Calacanis* Hey, this is the zoo and you are on the zoo and -- we
+are going to throw a pineapple at this, I mean, it’s just like...
+
+*Leo Laporte* Donkey Radio.
+
+*Jason Calacanis* Listen to something better than Donkey Radio. Stop
+rotting your brain, use that downtime at the gym, on the flight and in
+your car. You do those three things, at least you do two of the three.
+You buy a couple of audio books, you go to audible.com/twit2. You’d
+probably get some ridiculous deal, they give a ridiculous deal to only
+the TWiT audience. What’s the ridiculous deal…
+
+*Leo Laporte* The ridiculous deal today -- I am glad you asked, *Jason
+Calacanis*. If you go to audible.com/twit2, you could sign up for a
+platinum account and get two, not one but two books absolutely free. I
+am going to recommend one that is very appropriate. Did any of you ever
+read this, it’s – I found it because it was on the list of the, I think,
+of the 100 science fiction books you have to read, that everybody has to
+read. It’s 60 years old now by George R. Stewart, it’s called Earth
+Abides and it couldn’t be more appropriate. It starts with a guy who’s
+coming down from the mountains. He was camping and he got bit by a snake
+and was feverish and writhing for a week but somehow survives, comes to
+find that most of the earth has died off, due to a great plague that he
+was safe from, and he thinks because this snake bite somehow inoculated
+him.
+
+Well it turns out only, maybe hundreds or thousands of people have
+survived planetary-wide. Earth Abides is about his journey of discovery
+as he wanders looking for other people. He goes down to Berkeley, it
+takes place in the Bay Area. So I have a kind of little soft spot for
+it. He wanders into Berkeley and he saves the library because he says,
+well this is all of -- everything we have learned. He tries to teach, he
+does finally run into some other people. They start a tribe, a family.
+He tries to teach the young ones about the modern world, they can’t
+learn. It is fascinating story that ends in, I think, a very beautiful
+and upbeat way about the triumph of not only the earth, because the
+earth absolutely survives, but also of humanity, not technology, but of
+humanity.
+
+This is one of the best science fiction books in which there is no ray
+gun, there is no interplanetary travel, there is no time travel. It’s
+one of those plague stories that, like The Stand, that occur from time
+to time and maybe a good time to read this. It certainly is a beautiful
+book and I highly recommend it, written by George Stewart, narrated by
+Jonathan Davis and Connie Willis. Let me play just a little bit of it,
+so you can hear a little bit. Have you ever read this? This is a
+wonder...Patrick, you have probably read it.
+
+*Patrick Norton* No but I kept thinking of like, when you mentioned
+library, I kept waiting to hear that he broke his glasses.
+
+*Leo Laporte* Oh, actually that might be, I can’t remember. That’s a
+good point. What an irony, that would be irony, wouldn’t it?
+
+*Catherine Hall* Harsh.
+
+*Patrick Norton* No, that would be an episode of the Twilight Zone. I am
+still amused that you are talking about, like it’s a beautiful heroic,
+elegiac novel of gentle language, and you are like -- but it’s plague
+fiction.
+
+*Leo Laporte* Yeah, love that plague fiction. Here, listen to a little bit.
+
+“‘It can never happen!‘ -- as well say, ‘Because I have never broken my
+leg, my leg is unbreakable, ‘ or ‘Because I’ve never died, I am
+immortal.‘ One thinks first of some great plague of insects, locusts or
+grasshoppers, when the species suddenly increases out of all proportion...“
+
+Let me tell you, you are going to get pulled into this book and you are
+not...
+
+*Jason Calacanis* Can we just cancel TWiT and we’ll go listen.
+
+*Leo Laporte* You are not going to want to stop. This is recommended as
+one of the all-time great science fiction books, not very well known. I
+was blown away, I gave it to my daughter after I read it, I told her --
+because she wants to learn about sci-fi.
+
+*Brian Brushwood* You know Jason was joking like, let’s just quit the
+show and actually just listen but that happens to me all the time. I get
+pulled into the audible vortex where it’s like I’ll just listen to like
+-- must do dishes...
+
+*Leo Laporte* It’s actually good for doing dishes to, I might say.
+
+*Jason Calacanis* One thing I listened to, it’s my little
+recommendation. We Can Remember It For You Wholesale, from the...
+
+*Brian Brushwood* Oh the Philip K. Dick, Minority Report and other
+stories. You know what movie that became. We can remember it.
+
+*Leo Laporte* Total Recall.
+
+*Jason Calacanis* There you go, we have a nerd. These Philip K. Dick
+audio books are fantastic because you see some of the films that are
+made out of them, even Blade Runner, Do Androids Dream of Electric
+Sheep. The books are so much different than the movies and there are so
+much more interesting aspects to it, like listening to Do Androids Dream
+of Electric Sheep, which I listened to on the way back from Sundance, it
+was a 10-hour drive which is awesome because there was just so much more
+in the book than there is in the film obviously.
+
+*Brian Brushwood* Hey Jason, actually I tried several. You know Do
+Androids Dream of Electric Sheep became Blade Runner and I kid you not,
+I tried five full-times to watch Blade Runner and it was beautiful and
+gorgeous and I fell asleep every single time, and it wasn’t until I had
+read the original book, the Do Androids Dream of Electric Sheep, on
+audio book, which I think the version I read was performed by Calista
+Flockhart and I forget who the guy was.
+
+*Jason Calacanis* Oh no, yeah. It was Calista Flockhart and...
+
+*Brian Brushwood* It’s another famous guy.
+
+*Jason Calacanis* It’s Matthew Modine.
+
+*Brian Brushwood* Okay, but they were great and I got through the whole
+thing and you get to hear about, like the Kipplisation of the earth.
+
+*Jason Calacanis* Yes Kipple…
+
+*Brian Brushwood* I love that word Kipple, and as result after doing the
+book I was able to enjoy the movie so much more, it was alive and
+vibrant and I didn’t fall asleep.
+
+*Leo Laporte* A little tip if you are searching for it on audible. They
+have renamed it Blade Runner, so that people could find it a little bit
+better.
+
+*Brian Brushwood* Oh really.
+
+*Leo Laporte* Yeah but -- so let’s give you two books. You get the two
+books with the platinum account. So you want to read two great science
+fiction books, Blade Runner by Philip K. Dick and Earth Abides, by
+George R. Stewart, and you get both of them free when you go to
+audible.com/twit2 We highly encourage you to check it out, we thank you
+so much for the support. What is Kippling, what is the Kipple of the …
+
+*Jason Calacanis* The first ,you have to understand the first law of
+Kipple, Kipple drives out non-kipple.
+
+*Catherine Hall* Is that something from Fight Club?
+
+*Jason Calacanis* Yes, what it is, is you remember the JR, the Sebastian
+character…
+
+*Leo Laporte* Yes
+
+*Jason Calacanis*
+
+“These are my friends” 
+
+*Leo Laporte* Yes
+
+*Jason Calacanis* You know, the guy…
+
+*Leo Laporte* Yes, “These are my friends”
+
+*Jason Calacanis*
+
+“You’re my best buddy, JR, you have to help us.” “Okay.” That guy was great. “I only – I don’t make their eyes.” What happen is in that building, there’s so much junk because everybody has left earth that they call it kipple, kipple is just collections of…
+
+*Leo Laporte* Oh, collecting ,yes
+
+*Jason Calacanis* Nothing and – so one person lives in an apartment
+building with 500 units, it’s filled with kipple. And the kipple just
+seems to accumulate and accumulate and it drives out non-kipple because…
+
+*Leo Laporte* It sounds like my life…
+
+*Brian Brushwood* If you’ve ever seen my garage, that’s all I think I, I
+walk out, I’m like.
+
+*Leo Laporte* This building is full of kipple.
+
+*Jason Calacanis* He basically saw that we were going to live in a
+society where consumption would be unabounded and therefore there would
+be more stuff than people
+
+*Leo Laporte* Audible asked me –they wanted me to read a book, and they
+said what would you like to read and I said, I gave them a few choices,
+but I said what I’d really love to do is Phillip K. Dick’s short
+stories, but they have got them all, unfortunately
+
+*Brian Brushwood* Yes, and they’re good.
+
+*Jason Calacanis* I would listen to them by you.
+
+*Leo Laporte* The ones they have are great.
+
+*Jason Calacanis* Actually, here’s a, -- why don’t we have the TWiT
+round table read a book, we’ll all take a different character…
+
+*Leo Laporte* We could do that
+
+*Jason Calacanis* That would be so awesome.
+
+*Leo Laporte* Deal. That’s a great idea
+
+Unknown Speaker I’ve always wanted to do that
+
+*Jason Calacanis* So great
+
+*Leo Laporte* I’ve always wanted to do the radio theatre thing
+
+Unknown Speaker Yes
+
+*Leo Laporte* So if we can find something that we have the rights to, I
+will invite you all back. And we will do a show in here.
+
+*Brian Brushwood*
+
+That would be awesome, an old time radio, with…
+
+*Jason Calacanis* Why don’t we do Great Expectations?
+
+*Leo Laporte* Yes. Great Expectations is public domain, we could do
+that, sure. How long would that take?
+
+*Dr. Kiki (Kirsten Sanford)* We’d need lots of wine.
+
+*Leo Laporte* Yes, of non-stop reading. So I just also want to thank
+Garry’s Wine, they’re providing the wine for the show today and
+Garyswine.com We have a couple of wines, which you liked, Kiki, you
+decided you like the red better
+
+*Dr. Kiki (Kirsten Sanford)* I liked the, yes, the red just really hit
+me, I like it.
+
+*Catherine Hall* I really like it.
+
+*Dr. Kiki (Kirsten Sanford)* Very Tasty.
+
+*Catherine Hall* I love the red. It’s really good.
+
+*Dr. Kiki (Kirsten Sanford)* And it’s free.
+
+*Leo Laporte* And Brian, are you going to make it unanimous?
+
+*Brian Brushwood* Yes, the red is excellent… I haven’t tried it against
+anything but…
+
+*Leo Laporte* Well I’ve been drinking the Wallflower Sauvignon blanc,
+it’s a little sweet but I am finding it refreshing.
+
+*Dr. Kiki (Kirsten Sanford)* It is refreshing. This is a good…
+
+*Leo Laporte* But you like the cab.
+
+*Dr. Kiki (Kirsten Sanford)* Yeah, this is a good, deep taste, I love cabs.
+
+*Catherine Hall* There’s some depth to this one, it’s good.
+
+*Leo Laporte* Yes, we will – and Gary recommended that one highly. So I
+thought…
+
+*Catherine Hall* I just have a book on tape comment
+
+*Leo Laporte* Yes, yes
+
+*Catherine Hall* Well I started doing this myself and, I have to say
+it’s actually quite amazing. Because times like, I was driving home from
+San Francisco the other day and there was tons of traffic.
+
+*Leo Laporte* It’s a life saver…
+
+*Catherine Hall* And I started to get annoyed, and then I was like, oh,
+you know, I just listen to my book on tape and it sounds, like, silly,
+or whatever, but it really, I don’t know , it’s like you can learn…
+
+*Brian Brushwood* You know you got the bug bad when you started looking
+forward to traffic. You’re like, oh, sweet…
+
+*Dr. Kiki (Kirsten Sanford)* Do I have a long drive…
+
+*Jason Calacanis* That’s it, now it’s this week in Audible?
+
+*Leo Laporte* Well we are not talking about…
+
+*Jason Calacanis*
+
+This week in kipple.
+
+*Leo Laporte* We are talking about books. We are not talking about…
+
+*Jason Calacanis* I have a great idea, Leo
+
+*Dr. Kiki (Kirsten Sanford)* There was somebody who mentioned Hot Zone,
+it’s another plague book…
+
+*Jason Calacanis* We’re going to do this week in Audible
+
+Unknown Speaker Yes
+
+*Jason Calacanis* Like for 30 minutes after the show, that would be
+like, we’re going to charge them eight times whatever the sponsorship…
+
+*Leo Laporte* $1 million
+
+*Dr. Kiki (Kirsten Sanford)* That’s what I feel like…
+
+*Leo Laporte* There’s the businessman…
+
+*Catherine Hall* I liked him in Austin Powers
+
+Unknown Speaker That’s we can…
+
+*Leo Laporte* And am I Dr. Evil?
+
+*Catherine Hall* No I am, look, I am sitting here with your dog…
+
+*Leo Laporte* Oh, you are petting the dog, like Dr. Evil does…
+
+*Catherine Hall* I’m like the silent Dr. Evil
+
+*Leo Laporte* The most dangerous type
+
+*Catherine Hall* He’s evil…
+
+*Leo Laporte* All right, so let’s keep pack to the news stories; there
+are quite a few. I’m going to mention the Microsoft and Apple results.
+Microsoft’s – Microsoft show’s its first ever revenue decline, profits
+down 32%. The first quarterly revenue loss in 23 years as a public
+company, but they met Wall Street’s expectations and the price went up.
+
+*Brian Brushwood* That was the funny part because I clicked on the link
+and it says Microsoft’s shares jumped.
+
+*Leo Laporte* They jumped, how can you lose – all right you’re the
+business man Jason, why is that good news?
+
+*Jason Calacanis* Yes, I don’t know exactly – not losing as much as –
+probably was that people expected them to lose more. Typically when that
+happens you have – Microsoft is a blue-chip now, you have to remember.
+This is not like a growth stock, so people who own it own a lot of it.
+So, it’s not like – and it hasn’t really – in terms of the range it has
+traded in, it’s traded sideways for over five years.
+
+*Leo Laporte* It’s really been stagnant for so long, hasn’t it?
+
+*Jason Calacanis* Yes, I mean, the problem is it makes so much money,
+it’s so predictable as a business. And there are some signs of weakening
+now, though with Windows 7 and the Vista whole debacle. And then you
+have Apple actually getting some market share, and then you have
+netbooks cutting in and people are like – what’s the Linux operating
+system wrapper.
+
+*Leo Laporte* Ubuntu, oh ubi?
+
+*Jason Calacanis* Ubuntu is now actually maybe you could use it. So,
+they got a lot of challenges.
+
+*Leo Laporte* So, Microsoft; its first down quarter in 23 years; Apple
+posts its best second quarter earnings ever.
+
+*Brian Brushwood* And fires 10% of retail full-time employees.
+
+*Leo Laporte* Maybe that’s why. Actually, Mac sales down 12% so it was
+really on the iPhone and the iPod that they made so much money. They
+sold 2.22 million Macs for the quarter, 11 million iPods, 3.79 million
+iPhones. That’s in three months, that’s double the number it sold a year
+ago. I mean it really was an iPhone win.
+
+*Patrick Norton* What happened to the recession? I mean, this is what I
+found puzzling about Apple’s results is you would think an iPhone is the
+most unnecessary thing you could possibly buy in a down market. Where
+are people getting the money for this if everybody is losing their jobs?
+Who are these three million people buying iPhones?
+
+*Leo Laporte* Well, first of all maybe you could explain this to me, I
+don’t want to sound callous but everybody is not losing their jobs. What
+is unemployment at, 8.5?
+
+*Catherine Hall* Well actually it’s 16%.
+
+*Jason Calacanis* Well the real number is probably like 14.
+
+Dr. Kiki Is it 16?
+
+*Catherine Hall* 16% in California.
+
+*Leo Laporte* If you – underemployed, and state by state, not looking...
+
+*Jason Calacanis* Yeah; stopped looking, people who stop looking. So
+it’s a lot people and also people have this collective belt tightening,
+that’s been going on.
+
+*Leo Laporte* Well that’s what I’m seeing is this kind of psychology you
+feel guilty about spending.
+
+*Jason Calacanis* But you know what, I think the iPhone is so beautiful
+that it actually transcends recessionary –
+
+*Leo Laporte* Gets over your guilt. What we –
+
+*Brian Brushwood* We saw that before. Last time, and it was a technology
+thing last time. In the great depression when people defaulted on their
+loans and they came and they started confiscating stuff, people would
+give up their refrigerators before they gave up their radios.
+
+*Leo Laporte* They kept the radio.
+
+*Brian Brushwood* Yes.
+
+*Leo Laporte* I’ll eat warm food but give me Li'l Abner.
+
+*Brian Brushwood* That’s right.
+
+*Leo Laporte* Or whoever it was.
+
+*Dr. Kiki (Kirsten Sanford)* And people also went to the movies, so
+there’s the entertainment aspect –
+
+*Leo Laporte* Movies were huge.
+
+*Catherine Hall* And – but also the radio is probably the first time
+that people were really connected to what was going on at the time. And
+so, there’s the news and the iPhone does that now.
+
+*Brian Brushwood* Think about it – if you have to take away your iPhone
+it’s not really the piece of equipment you’re worried about. That’s my
+connection to all my friends –
+
+*Leo Laporte* The phone is the least of it isn’t it?
+
+*Brian Brushwood* Yeah, exactly that’s my twitterfeed, that’s my
+FriendFeed, that’s my connection to the outside world.
+
+*Dr. Kiki (Kirsten Sanford)* It’s my Google, it’s everything.
+
+*Catherine Hall* Oh I think, too –
+
+*Brian Brushwood* Well, it’s also – sorry, go ahead, Catherine.
+
+*Catherine Hall* Oh! I was going to say, I mean, going back to what you
+said about buyer’s remorse, I think because it’s a tool that we can use
+for our businesses and communication, our psyche allows us to purchase it.
+
+*Leo Laporte* It’s justifiable.
+
+*Catherine Hall* Exactly.
+
+*Leo Laporte* Yes, yes, Patrick?
+
+*Patrick Norton* I mean, the iPhone’s hit Wal-Mart. It’s scaled probably
+better than any cellphone in probably a decade in terms of gathering
+market share. It’s popularized, it’s available and people – there’s also
+especially younger generations, they spend – younger kids spend a huge
+amount of money on cellphones monthly without thinking twice about it.
+
+I mean it’s amazing actually, it’s – when you look at numbers of
+somebody in their thirties or forties or fifties, on what they spend on
+apps or songs or ringtones versus what somebody, an average teenager or
+somebody in their early twenties is spending on cellphones. It’s just
+considered a necessity and they’ve scaled it out. The price is down, you
+can pick one up for $200, they’re in Wal-Mart, it’s just hugely popular.
+
+Oh by the way, the whole refrigerator thing, people gave up their
+refrigerators because they couldn’t carry them in the car with them to
+the next place.
+
+*Jason Calacanis* On their way out to pick grapes.
+
+*Patrick Norton* Well there’s also – but the other thing is that also
+the refrigerator was not nearly as entrenched in culture with – none of
+us, most of us can’t imagine life without a refrigerator, everybody in
+the 1920’s could pretty much imagine life without a refrigerator.
+
+Dr. Kiki They had ice boxes and –
+
+*Patrick Norton* It’s still – but it’s sill, you know what I mean, they
+had ice boxes ergo they could get rid of the refrigerator.
+
+Dr. Kiki They didn’t need a refrigerator.
+
+*Patrick Norton* Yes, but I mean, ice boxes still require money and they
+required a weekly delivery or daily semi-weekly delivery from an ice
+man; that costs money.
+
+*Leo Laporte* Get this statistic, India in March, 15.6 million new
+cellphone users in March.
+
+*Catherine Hall* And India, they don’t have refrigerators.
+
+*Leo Laporte* They don’t?
+
+*Catherine Hall* I am serious.
+
+*Brian Brushwood* But they have cellphones now.
+
+*Catherine Hall* It’s really – yes, I have been to India, they do not –
+they just – and it’s amazing to me that they have dairy products and
+they don’t – like, we feel like we need to have refrigerators for
+everything. You really don’t need them for everything.
+
+*Leo Laporte* It’s a very American thing, the refrigerator.
+
+Dr. Kiki If you are going to get things fresh, if you’re going to use
+things within a certain period time, the refrigerator just extends the
+period of time that things stay good. It decreases the rate of death.
+
+*Leo Laporte* They also – and Alan Birchell’s pointing this out in our
+FriendFeed conversation, they also don’t have landlines in India. So, I
+mean –
+
+*Catherine Hall* So, there you go.
+
+*Leo Laporte* This is a lifeline.
+
+*Jason Calacanis* They’re skipping –
+
+*Catherine Hall* But what’s the population of India?
+
+*Brian Brushwood* But also they are kind of leap frogging over, a lot of
+people are giving up their landlines here in the United States. They are
+just leap frogging straight to...
+
+*Patrick Norton* Well no, it costs like an order – more than an order of
+magnitude less to install cell towers than it does to involve landlines.
+So for most of the third world cell phones are almost exclusively what’s
+being going out for the last decade.
+
+The other thing is like 15 million people, isn’t that like, what, 1.5%
+of the population?
+
+*Catherine Hall* Yes, India is huge.
+
+*Patrick Norton* There’s a billion people in India, at least.
+
+*Brian Brushwood* This reminds me the book The World is Flat, where he
+talks about the side-effect of – we know, we all grumble, grumble about
+the outsourcing of jobs to India but the – the other side of the coin is
+that we are creating another middle class over there and they are going
+to be buying Windows XP and Vista and Windows 7.
+
+*Leo Laporte* I’m just glad they have a middle class is we don’t seem to
+have. Somebody –
+
+*Brian Brushwood* We’re exporting our middle class over there!
+
+*Catherine Hall* We have a huge middle class.
+
+*Leo Laporte* It’s shrinking.
+
+*Jason Calacanis* You know what’s interesting, did you see that the
+T-Mobile sold like a million G1s?
+
+*Leo Laporte* That kind of surprised me, but it took the a long time. I
+mean, it wasn’t –
+
+*Jason Calacanis* Six months. There was a first – it was the same period
+of time for the 3.7 million iPhones.
+
+*Leo Laporte* Right.
+
+*Jason Calacanis* And that’s with T-Mobile which is like the fourth –
+
+*Patrick Norton* That also includes the inaugural adduction. Oh you mean
+– that includes like – how many iPhones did they sell in the first six
+months of the iPhone?
+
+*Leo Laporte* Right.
+
+*Jason Calacanis* They sold them out, I mean, I don’t know how many it
+was. I don’t think they said. But if you think about that, I mean,
+that’s with the fourth largest carrier, T-Mobile. And when they get that
+thing out to other platforms, I think that this is the sleeper. Google’s
+got a huge business here, huge.
+
+*Leo Laporte* Apparently they are about to do a netbook, somebody is
+about to do a netbook with –
+
+*Jason Calacanis* What this is – yes, what’s happening is they’re saying
+why should we give any money to Microsoft when we can get this for free?
+
+*Leo Laporte* $250.
+
+*Patrick Norton* Because there’s no power management? Battery life,
+power management which is always been miserable on anything other than
+OSX or Windows XP.
+
+*Jason Calacanis* Spinning wheel of death...
+
+*Patrick Norton* Excuse me?
+
+*Jason Calacanis* Spinning wheel of death. I mean, you don’t have to
+deal with it freezing, blue screen.
+
+*Patrick Norton* You know, I haven’t – what’s the last time you had a
+blue screen on Windows?
+
+*Jason Calacanis* Five years ago when I last used it.
+
+*Patrick Norton* I haven’t had one on Windows 7 yet. I haven’t had –
+
+*Jason Calacanis* They day I uninstalled it!
+
+*Leo Laporte* I have to say that the problem is that we haven’t really
+seen Android, at least I haven’t on a decent platform. This G1 has just
+not enough horsepower to really show what Android can do, but I’d love
+to see it on a netbook just to see how it does.
+
+*Patrick Norton* The netbook that’s suppose to be the first one coming
+out is pretty – it’s basically a glorified cellphone. It is not a full
+Intel powered netbook.
+
+*Leo Laporte* Is it ASUS? Who is making it?
+
+*Patrick Norton* It was some fourth tier company I’d never heard of before.
+
+*Leo Laporte* Interesting.
+
+*Brian Brushwood* Well since we’re talking about netbooks, is there any
+interest in talking about Apple officially pooh-poohing on the netbook?
+
+*Leo Laporte* Yes.
+
+*Patrick Norton* You think they’re going to release WWDC?
+
+*Jason Calacanis* Macbook’s coming out.
+
+*Leo Laporte* They – it was Tim Cook in the Analysts Meeting. Now see,
+Tim is not like Jobs. If Jobs said that, I’d say oh yeah, they are
+definitely making one. But Tim Cook, is he – I mean you probably, I
+don’t know him, Jason, do you – you must know him? You know everybody.
+
+*Jason Calacanis* I don’t – I think I’ve met him once but I don’t know
+him. But they are notorious for lying through their teeth, and then
+doing the exact opposite of what they say.
+
+*Leo Laporte* Especially, well yeah, I mean Steve Jobs saying, “no one
+will ever want to watch video on a portable device”.
+
+*Jason Calacanis* A conversation he told me was hysterical. But you know
+what the thing about netbooks is, I think this is another sleeper and I
+think I talked about this a year ago on TWiT. In Japan, do you know how
+much a netbook costs in Japan?
+
+*Leo Laporte* Uh-uh.
+
+*Jason Calacanis* $1.
+
+*Leo Laporte* What? Oh, because they are subsidized by the carrier.
+
+*Jason Calacanis* Yes, walk in and if you buy a $25 or a $35 data plan
+with 3G, you get a $500 Dell.
+
+*Leo Laporte* That’s happening in the States. Verizon are selling a $50
+netbook, as long as you sign up for two years. That’s happening in the
+States already.
+
+*Patrick Norton* At what, 60, $75 a month for the plan? For the
+“unlimited plan” that’s capped at 5 gigabytes?
+
+*Leo Laporte* That’s really not, yeah.
+
+*Brian Brushwood* Well, that actually ties into my little conspiracy
+theory is that, obviously Apple bought all those touch screens a while
+back, and there was conjectures that it was all about a netbook. I
+wonder if they’re just going to still essentially have a Netbook, but
+not call it a Netbook, call it an Always On Connected Tablet or
+something like that.
+
+*Leo Laporte* Yes, I …
+
+*Leo Laporte* It’s June, we’re all agreed, right? June; netbook. and
+Steve Jobs, okay so here is the deal.
+
+*Brian Brushwood* Surprise guest?
+
+*Leo Laporte* Yes, Phil Schiller is doing the speech at WWDC, they talk
+blah blah blah blah. And then Phil Schiller says, oh, one more thing,
+and out walks Steve Jobs with a netbook.
+
+*Brian Brushwood* Completely ripped and buffed.
+
+*Leo Laporte* Yeah.
+
+*Brian Brushwood* Half robotic, shooting lasers.
+
+*Jason Calacanis* Yes!
+
+*Brian Brushwood* Pow pow pow!
+
+*Leo Laporte* I am back!
+
+*Brian Brushwood* Pow pow pow!
+
+*Jason Calacanis* I’m back, mofos.
+
+*Leo Laporte* That’s my plan.
+
+*Jason Calacanis* How do you like me now, dog? How do you like my little
+bit of plastic?
+
+*Catherine Hall* Ooh, I totally want Steve Jobs in the remake of RoboCop.
+
+*Leo Laporte* Yes, you asked for a Netbook, here is. I am The Jobs.
+
+*Brian Brushwood* Oh, and one more thing, it also detects swine flu!
+
+*Jason Calacanis* Aw hell.
+
+*Leo Laporte* That’s our, that’s my vote anyway, I don’t know, maybe
+that’s wishful, a little bit of wishful thinking.
+
+*Jason Calacanis* I can guarantee right now they will launch a netbook,
+whether they are consciously going to do it or not, because they have no
+choice. These things are so good and so cheap, if I was with this
+Windows ad campaign, they need to say, get Windows for $500, buy three
+computers, buy one for everybody in the family or buy one Mac.
+
+*Leo Laporte* Right. And they are not going far enough, they are selling
+this crappy HP Notebooks instead of saying, what are you talking about
+$1,000? Here’s three Notebooks for 999!
+
+*Jason Calacanis* That’s what they should be doing, they should say,
+we’re – “Hi, we’re the Calacanises”, and “Hi, we’re the Laportes”.
+
+*Leo Laporte* “Hi, we’re the Calacanises”?
+
+*Jason Calacanis* “And we were going to buy one $2,000 MacBook tower,
+but instead we decided to buy each member of the family four $500
+netbooks. F you Apple.” Boom. That’s what – if I was a CEO of Microsoft,
+that’s what I would –
+
+*Leo Laporte* It’s a new reality show. “Hi, we’re the Calacanises”, come
+into our home.
+
+*Leo Laporte* We have many Notebooks, some of them are very small.
+
+*Jason Calacanis* Very nice.
+
+*Leo Laporte* Very nice.
+
+*Jason Calacanis* We play Doom.
+
+*Leo Laporte* Yes.
+
+*Jason Calacanis* At the LAN party.
+
+*Leo Laporte* Here’s one running Android. Well, I would love to see a
+tablet from Apple, I think a tablet from Apple is a great idea. But they
+did, you’re right, they said, Tim Cook said, this is crappy, who would
+want a crappy computer like this, we wouldn’t sell it because it’s just
+so junky. But what’s setting it up is, however, but –
+
+*Brian Brushwood* You know what people do want?
+
+*Leo Laporte* What they would like is –
+
+*Brian Brushwood* Is something that fills this niche.
+
+*Leo Laporte* Yes.
+
+*Brian Brushwood* But has better processing power.
+
+*Leo Laporte* What if –
+
+*Brian Brushwood* More powerful.
+
+*Leo Laporte* What if you could get one that really was nice?
+
+*Patrick Norton* iPhone with a bigger screen that will actually use a
+keyboard and a decent processor. I would actually, I would consider that.
+
+*Catherine Hall* Yes.
+
+*Patrick Norton* About 1,000 times more than I would consider the Air.
+
+*Leo Laporte* I think Kiki would French kiss it actually.
+
+*Brian Brushwood* If this were to happen, do you know who should you be
+worried about it is the Amazon Kindle. Because everything I hear about
+the Kindle, the thing I am least interested in is using it to read books
+or hearing it do robo-speech to laboriously read something to me. But
+the idea of something that’s got an always on data connection pre-paid,
+that gets me automatic content download, if it was like that but
+beautiful like a giant iPhone –
+
+*Patrick Norton* Won’t happen. Can’t happen.
+
+*Brian Brushwood* All did was surf the web and I could see everything
+online…
+
+*Patrick Norton* Can’t happen, Brian.
+
+*Leo Laporte* Why can’t it happen? What’s wrong with it Patrick?
+
+*Patrick Norton* There’s two issues there, one is the only reason that
+Whispernet can work is because they have occasional use of relatively
+small downloads, so they can scale it. They are basically paying
+nothing, because a consumer account, barring some of the, one of those
+mystical Apple negotiations of a better deal than anyone else gets,
+basically unless the new – unless the Apple netbook is essentially sold
+as a device like an iPhone, they are not going to get a deal on the –
+you’re not going to get – you are not going to pay $250 or $500 for
+something and get lifetime free wireless. Which is one of the, which is
+why –
+
+*Brian Brushwood* But I tell you, I would spend $350 or whatever, and
+tack on, I don’t know $20 extra a month to add it to my collection.
+
+*Patrick Norton* It’s $60. The problem is it‘s going to be…
+
+*Leo Laporte* It doesn’t have to be $60 though, Patrick, does it?
+
+*Patrick Norton* Well, think about it this way, what are you paying for
+your iPhone? You’re paying for your plan plus an additional $35 a month.
+So okay, so how are you going to, how are they going to get around the,
+so that’s like almost $100, if you have a cheap plan, it’s still $75 a
+month. So let’s say they take out the cell phone, the take the cell
+phone number away from it, they make a data device, what’s going to make
+them want to go lower than the $60 a month they already get for a 5
+gigabyte capped “unlimited” account?
+
+And even without that, the thing that makes the battery life work on the
+Kindles, which is like 90% of what makes [audio gap] them great is the
+fact that they pop, basically the E Ink changes the display to the new
+configuration and then it stops using power. So effectively, they have
+no power draw compared to a traditional computer, or a computer that
+you’d use to browse the web or anything. If it wasn’t for that, the
+Kindle would have a battery back on it like this thick to give two weeks
+of reading.
+
+*Leo Laporte* Yes, yes.
+
+*Patrick Norton* You’d basically have it attached to a car battery.
+
+*Brian Brushwood* You know what I would do? Is I would totally buy
+something that was like a a jumbo iPhone, and actually had a dock for
+you to lock-in your iPhone into or something.
+
+*Patrick Norton* Right.
+
+*Brian Brushwood* That would be good, and through which piggy back on
+that data connection, that’d be kind of cool.
+
+*Leo Laporte* I think Apple might surprise everybody and just do another
+iPhone, and not do a tablet, not do anything bigger. With – on the
+premise that this is enough. I mean, look they just sold, what, how many
+millions of them in three months? I mean, this, for many people this is
+enough.
+
+*Brian Brushwood* What about the screens they bought though?
+
+*Patrick Norton* Well, how big were those screens?
+
+*Brian Brushwood* 12” touch screens.
+
+*Leo Laporte* They weren’t that big.
+
+*Brian Brushwood* Or 10.5”, whatever it was.
+
+*Leo Laporte* They bought – supposedly, according to the EE Times or one
+of the Taiwanese electronics news things they supposedly bought these.
+But I wouldn’t be surprised to see – I think we are all assuming Apple’s
+going to do this; Apple, you never can assume anything.
+
+*Brian Brushwood* That’s the problem, is they have set such a precedent
+of blowing us away out of nowhere.
+
+*Leo Laporte* Yes.
+
+*Brian Brushwood* That it’s like, when are they going to resurrect
+people, come on Apple, hurry up.
+
+*Leo Laporte* And they may not need to, that’s the point, is that they
+may be very happy with how the iPhone is selling.
+
+Dr. Kiki Uh-huh.
+
+*Leo Laporte* And by the way, who needs a tablet that you can kill a
+baby by shaking it with, right? I mean, where is the, where is the….
+
+*Jason Calacanis* God Almighty, what a bunch of gotcha.
+
+*Leo Laporte* So what happened there?
+
+Dr. Kiki Was that honestly an application?
+
+*Leo Laporte* Yes.
+
+*Jason Calacanis* It was, yes. So basically, somebody created an
+offensive application, I have seen –
+
+*Leo Laporte* Really offensive!
+
+*Jason Calacanis* Where you basically shake a baby, it’s actually a
+really horrible thing. Obviously, shaken baby syndrome; very dangerous.
+Obviously, abusing kids; it happens. Not funny, even in a CollegeHumor
+type of way, not that they did it. But it’s just all around bad. So
+somehow, somebody let it slide through, meaning –
+
+*Leo Laporte* There is a lot of pressure, they’ve got 35,000
+applications, a lot of pressure.
+
+*Jason Calacanis* I don’t think they are even looking, I think they are
+probably just going down a page, looking at the name of it and just
+going, check, check, check, go.
+
+*Leo Laporte* I think they’re looking. They didn’t look at that one, but
+I do think they’re looking. I know a lot of good iPhone applications,
+great iPhone applications, that are still on hold, that people can’t get
+it in the store. There’s one guy I know wrote an application that I
+would love to see that is a – it’s a Netflix application that allows you
+to manage your Netflix on the iPhone, wouldn’t that be cool?
+
+Dr. Kiki That’ll be great.
+
+*Brian Brushwood* And it’s just waiting in queue?
+
+*Leo Laporte* It’s just waiting in the queue, it’s not out still.
+
+*Jason Calacanis* What they need to do is, they need to have two, two
+types of applications, one are certified, one are not certified. Anybody
+can make an uncertified application, and you can buy through the iTunes
+Store, it doesn’t have the certified logo on it. Certified applications
+don’t come up in search, certified applications have a big roadblock;
+this is not certified, it could destroy your computer, at your own risk.
+You know, massive two or three roadblock kind of situation; are you sure
+you want to install –
+
+*Leo Laporte* Here is my question, this is interesting, I was watching a
+– The History Channel documentary on the computing in the ‘80s, and they
+brought up the specter of Atari. Remember Atari 2600, king of the world,
+greatest – everybody was buying it, they were under $200, great games,
+but Atari said, Nolan Bushnell I think said quite admirably, we will
+make open system and let anybody develop games for it. So many crappy
+games came out, it not only – it killed the platform, and not only were
+people getting, “what is this game?”, but they actually had to kill the
+2600, they had to bulldoze cartridges because there were so many bad
+cartridges.
+
+Nintendo with the NES took a look at this and said, woah, wait a minute,
+we can’t do that, and they were the ones who said we have to approve and
+license every single game. Apple’s iTunes Store is exactly that same
+model. Now, does that make sense in the day and age of the internet
+where information is almost perfect? Or…
+
+*Brian Brushwood* This is, this is really tough for me because both of
+you guys sounded like geniuses, I am just like, oh, Jason’s so right, no
+Leo is so right.
+
+*Leo Laporte* Well, it may be that the times have changed, the internet
+– what would have saved the 2600 is if there were a better communication
+system among customers and they could have said, “oh, whatever you do,
+don’t buy that Dig Dug cartridge, it’s a piece of crap”, then those
+things may not have killed the 2600. But at that time, there was –
+
+*Jason Calacanis* I don’t think that was the sole thing that killed it
+though. It may not –
+
+*Leo Laporte* Oh, it’s well – no it killed it, it killed it. And
+Nintendo succeeded because they did the exact opposite, they said you
+may not make a game for the NES unless we say so. And everybody bought
+the NES because they knew that every game was at least going to be
+playable.
+
+*Dr. Kiki (Kirsten Sanford)* I think it’s really important for a company
+to have the certification of products that come out, that apply to their
+products. So, that the way that the iPhone apps are working, I mean,
+those are iPhone – like they’re related to the iPhone. The potential of
+something like the shaken baby app coming out, that has a –
+
+*Leo Laporte* That’s an aberration, we can admit that.
+
+*Dr. Kiki (Kirsten Sanford)* No, but it has – it’s an aberration but it
+has a trickle back effect to the image of the company and the way that
+you see it.
+
+*Leo Laporte* Well that’s true, yes.
+
+*Dr. Kiki (Kirsten Sanford)* And so, as the company that is – this is
+Apple, this is iPhone, this is their entire image, and so they want to
+control that.
+
+*Leo Laporte* Yes.
+
+*Dr. Kiki (Kirsten Sanford)* And I think that Jason’s is right in the
+fact that maybe their own little directory of iPhone apps, sure these
+are certified, these are the things that we agree are awesome products
+that we want to have affiliated with us. But then maybe allow other
+products to be created but not certified, and you can have your shaken
+baby or like, shoot the dog or whatever it happens to be.
+
+*Leo Laporte* Well, that system exists already with jail broken iPhones.
+And I have to say a lot of the applications are…
+
+*Dr. Kiki (Kirsten Sanford)* Right, but not have it like destroy the
+warranty though.
+
+*Catherine Hall* But isn’t that what Apple’s like base – like their
+brand name’s based on, is that everything works, sort of thing…
+
+*Leo Laporte* Exactly.
+
+*Catherine Hall* I mean isn’t that against their branding if you start
+introducing applications and other things that work with their products.
+
+*Leo Laporte* That’s the point.
+
+*Patrick Norton* Yeah, I’m going to say, I’m always inherently bummed to
+see somebody screwed over ,you know, just on poor taste, like, I mean
+this was taken off because it was in poor taste and that can be a very
+person by person basis and whether or not this is a good or bad app,
+obviously…
+
+*Leo Laporte* I’ll give you another one, let’s give you another one and
+then you could judge it on this, okay. There was an application where
+you could select a political figure, Hillary Clinton, Barack Obama,
+George Bush have them bouncing on a trampoline in the Oval Office and
+doing back flips and I think if Hillary did it her skirt would go up or
+something. But anyway, the -- Apple said no, we’ll not allow you to sell
+this in the iTunes Store because it is disrespectful to elected officials.
+
+*Patrick Norton* Wow.
+
+*Leo Laporte* Yeah, use that one as your example, everybody says shaken
+baby is…
+
+*Patrick Norton* Right, right, right, well and that’s just it – what I
+was going to say is I’m always bummed to see something wiped out just
+for being in poor taste because that’s a person by person. But it’s very
+consistent with what everything Apple’s done so far, I’m not going to be
+too harsh on them. They’re playing by the same rules they have always
+played by.
+
+*Leo Laporte* So you agree with Catherine and you agree too that this is
+their business model.
+
+*Dr. Kiki (Kirsten Sanford)* Yeah, it’s their brand.
+
+*Patrick Norton* Yeah, it’s a private business, they do whatever they want.
+
+*Leo Laporte* Well, they of course can do it. Yeah, but we can…
+
+*Dr. Kiki (Kirsten Sanford)* And then we can go and we can tell dead
+baby jokes and have our poor taste and…
+
+*Leo Laporte* We don’t tell dead baby jokes.
+
+*Patrick Norton* Wow, there’s the confession. You heard it straight from
+Dr. Kiki. Headline tomorrow, Dr. Kiki loves dead baby jokes.
+
+*Leo Laporte* You know that’s actually our new show is Dr. Kiki’s dead
+baby jokes. That was the name you were going to come up with…
+
+*Dr. Kiki (Kirsten Sanford)* That’s the name I came up with.
+
+*Leo Laporte* Yeah, I thought so, yeah it’s exciting, good.
+
+*Dr. Kiki (Kirsten Sanford)* An hour a week, dead baby jokes.
+
+*Patrick Norton* Not sponsored by Apple.
+
+Dr. Kiki No.
+
+*Leo Laporte* Go ahead Jason, just ignore these kids.
+
+*Jason Calacanis* When I’m the reason you know something is wrong with
+the show, really wrong, I don’t know who these people you have in the
+studio are but I love them. Seriously, this is a big problem for Apple
+actually because they what they are doing is they are setting themselves
+up in this anti-trust situation again. And they don’t have market share
+so they can sort of play a game with PC market share about not having
+hardware run on OS10. But in iPhone they are going to have a monopoly
+and the same thing with iTunes and so this is really stupid of them to
+take this sort of, we’re going to be the judge of everything, they
+should have a certified group but then have one that’s not certified.
+But the crazy thing is I don’t know if you guys know, but I was
+officially elected chairman of the Internet.
+
+*Leo Laporte* Congratulations, I’ve been wondering who’s running this.
+
+*Jason Calacanis* I’ve actually, because, I know I’m the chairman of the
+Internet because I get all these emails from all these crazy people who
+would tell me....
+
+*Leo Laporte* Now that you’re in charge, let’s fix this, yeah.
+
+*Jason Calacanis* And I get all these things to, yeah. But one of them
+[indiscernible] I’ve been getting an email from somebody who is involved
+in a project about shaken baby syndrome and all this stuff. So he’s
+writing me these long emails about, oh my God, Apple is the worst
+company in the world. So, now they want Tim Cook to attend a two hour
+panel discussions about prevention of abused head trauma at the
+University of North Carolina, Chapel Hill on May 6th. They want him to
+you know like – work directly to get the people who downloaded this and
+have an intervention with them and the guy’s like, “What do you think,
+Jason?” and I’m like – and I wrote him, I said, I think you’re
+leveraging their stupid mistake in like a really heavy handed way. And
+it makes you look like you’re trying to manipulate the system in a
+really cheap…
+
+*Leo Laporte* It’s extortion, yeah.
+
+*Jason Calacanis* Because Apple is a good company that made a stupid
+mistake and then apologised. What more do you want? And he said well
+they have to do more. And I’m like, why you emailing me I know I’m the
+chairman of the Interwebs. But as chairman of the Interwebs this is not
+an appropriate way, you have to actually fill out the form 4097B and you
+have to challenge the Interweb standards of shaken baby syndrome. And I,
+just unbelievable, like this like eight page letter of everything Apple
+must do.
+
+*Leo Laporte* Apple dodged a big bullet thouh, because you they’re -- on
+Thursday they sold their one billionth application in the App Store.
+
+*Jason Calacanis* Yes.
+
+*Leo Laporte* If it had been shaken baby, I think *Brian Brushwood*
+played this out.
+
+*Dr. Kiki (Kirsten Sanford)* That would have been PR disaster.
+
+*Leo Laporte* It could have been so much worse.
+
+*Brian Brushwood* And the one billionth app is…
+
+*Jason Calacanis* And the one billionth and one application…
+
+*Leo Laporte* The one billionth was a free app called Bump that I guess
+lets you copy your iPod touch contacts over to your iPhone or something
+like that. But it was a free application, which is probably not what
+Apple would have liked. The winner is a 13 year old kid. He’s going to
+get $10,000 worth of iPod songs. That’s worth 10,000 songs, right.
+Depends on what you buy.
+
+*Brian Brushwood* Almost enough to fill up his iPod.
+
+*Leo Laporte* And he gets a MacBook Pro.
+
+*Jason Calacanis* He actually declined the $10,000 iTunes gift
+certificate. And said I have a million songs from Pirate Bay, thanks
+very much though.
+
+*Leo Laporte* I don’t really need that. Yeah, let’s talk about the
+Pirate Bay judgement. This is kind of interesting. We talked last about
+the fact that the two founders of Pirate Bay were guilty -- vewy ewy
+(sic) guilty by a Swedish court that said that this is piracy, even
+though you are just running a search engine, you don’t actually host any
+pirated files those, Torrentz point to, for the most part, the illegal
+files. So you’re guilty, they fined them a couple of million dollars and
+a year in jail. Now, they are appealing. But now comes news that the
+judge who sentenced them has some ties to some copyright organizations.
+
+*Patrick Norton* You know what this is like, this is like watching a
+concert and it’s the most hilariously awesome circus you’ve ever seen
+and the show’s over and everyone’s still going nuts and somebody walks
+on stage holding up a finger, like oh, you want one more? And we’re
+like, yeah…
+
+*Leo Laporte* This will not end.
+
+*Jason Calacanis* Well they had -- they are also appealing, I don’t
+think I’m going to say right now, 70% chance these guys are not going to
+jail. People are protesting over there and it’s a very liberal society and…
+
+*Leo Laporte* Well, this gives them a handle if they are going to
+overturn it. This gives them a handle. The judge would have to be…
+
+*Patrick Norton* This doesn’t give them a handle, this gives them a
+baseball bat and a backhoe and a [indiscernible] I mean this is – is
+Nostrum, who’s the judge, is a member of the Swedish Copyright
+Association, and something else I’ve never heard of which is the Swedish
+Association for Industrial Legal Protection, which just would look
+awesome on a T-shirt. He’s so – but the judge serves in the Swedish
+Copyright Association with the lawyers for the plaintiff. So he’s in an
+association with the lawyers for the plaintiff and the quote – it’s a
+great quote on the CNET story, it’s “every time I take…” somebody has to
+do the Swedish chef on this one.
+
+*Dr. Kiki (Kirsten Sanford)* Are you trying to be Swedish again?
+
+*Leo Laporte* I got into trouble last for doing it. But I’ll do it for
+you Patrick, because I love you man.
+
+*Patrick Norton* I work with a Swede; she loves the Swedish chef humour.
+
+*Leo Laporte* Every time I the case, I evaluate it for consider myself
+having a conflict of interest.
+
+*Catherine Hall* That’s like a mix between a Swedish and Stephen Hawking.
+
+*Leo Laporte* In this case I didn’t find out to have one so I think its
+okay.
+
+*Patrick Norton* I think the judge is about to get his ass handed to him.
+
+*Jason Calacanis* Well if you think you didn’t have a conflict then we
+-- sorry we brought it up.
+
+*Leo Laporte* Yeah, yeah, okay you’re right, your right, no problem.
+That’s kind of, I think it’s not so bad being a member of those
+organisations. But really, if you’re serving on the board with the
+plaintiff’s attorneys, that would seem to be a conflict of interest.
+
+*Brian Brushwood* I don’t know if he was serving on the board or they
+are just merely members of same association. But it’s obvious that the
+judge has a bias to the copyright organisations.
+
+*Leo Laporte* Yeah, I would say so.
+
+*Brian Brushwood* I don’t think copyrights are bad thing and it’s really
+– it’s a really interesting freedom of speech versus the Pirate Bay guys
+obviously want to destroy copyright and destroy all copy protection and
+encourage as much file trading as possible.
+
+*Leo Laporte* Catherine, you are a photographer and of course one of the
+issues photographers face these days is getting ripped off on their
+images. How would you feel if your images were on Pirate Bay? Not the
+images themselves, just the Torrentz. Are these guys – should they go to
+jail. It’s a tough one, isn’t it? It’s not obvious.
+
+*Catherine Hall* It is, yeah, it’s definitely…
+
+*Leo Laporte* I think the damage is minimal, is I guess what I would
+say. That’d be my thought anyway.
+
+*Catherine Hall* Well I don’t know how to answer that because I feel a
+conflict with that a lot. You know as far as where the boundary is and
+when you put the -- stuff on the Internet, it’s sort of out there.
+
+*Leo Laporte* Well now, okay in the defence of the movie companies, they
+didn’t put anything on the Internet. It’s people like *Brian Brushwood*
+did that.
+
+*Brian Brushwood* What?
+
+*Leo Laporte* They just put a movie out and somebody else took the DVD
+and put it on.
+
+*Patrick Norton* Or in some cases some of their own employees or
+sub-contractors took a version movie and made it available. Which is I –
+whoever did this with the Wolverine movie. I mean most of the time they
+watermark this stuff so they can identify the original source. I can’t
+imagine what they are going to do to that individual or company.
+
+*Leo Laporte* I just don’t think that Pirate Bay – well there’s two
+things I think, one is they are a search engine, what’s -- who’s next,
+Google? You can search for Torrentz on Google.
+
+*Patrick Norton* Let me, let me sort of like take a step back from what
+I was saying before is one, yeah I don’t think, I don’t think linking in
+to Torrent site should be illegal. I don’t think linking to illegal code
+should be illegal, but the – what’s great about the Pirate Bay guys is
+that they worked so hard to establish themselves as such a huge target.
+
+*Leo Laporte* I know.
+
+*Patrick Norton* And they have, unlike people -- because there were
+people who were talking for a long time like yeah we’re going to set up
+a test case for the DMCA. So it can go the Supreme Court and it be
+struck down as being unconstitutional and then it’s like – every time a
+case comes up that might actually get anywhere near to the Supreme
+Court, everybody’s like oh yeah – did you know that copyright is
+provided for in the constitution but not fair use, maybe we shouldn’t
+take this to the Supreme Court and…
+
+*Leo Laporte* Because they are afraid, they are afraid that the courts
+will set a precedent, that doesn’t exist right, now in favor of fair use.
+
+*Patrick Norton* Yeah, because the precedent, basically the fundamental
+precedent for copyright is like, oh yeah, it’s kind of in the
+constitution to encourage development of technology and stuff, but fair
+use is not – fair use is an accepted thing and fair use has been a
+rubber blanket that’s been stretched in some interesting ways but it’s –
+I still think the DMCA is a miserable law that should be stomped into
+submission, but – there’s not a lot of legal grounds to work with that
+and so much of what people do that violates the DMCA is basically
+avoiding paying for something that somebody else created.
+
+*Leo Laporte* That’ why I asked Catherine, because actually we are all
+content creators, unlike Catherine though we put our stuff on the net
+and say take it, take it, please take it.
+
+*Patrick Norton* Well, in some cases though, like when my wedding
+pictures were put up on your website, somebody copied all of them off
+your website, some guy in Oklahoma uses them, or did, I have checked
+recently uses them gather website hits that direct people to his eBay’s
+sell site.
+
+*Leo Laporte* Oh, I am sorry.
+
+*Patrick Norton* Hey, there is nothing we can do about it because they
+were all posted on your website with a copy left or creative commons.
+So, it’s – it’s like if people…
+
+*Brian Brushwood* Leo looks so regretful dude, he’s so bummed.
+
+*Leo Laporte* That is one more reason, Patrick has many reasons to hate
+me. It’s just one more reason, just add it to the pile.
+
+*Patrick Norton* It’s great because at some point, it’s actually, it’s
+given me, so what I said to my wife one day is look, some day we are
+going to be driving on I40, we are going to be in Oklahoma, we are going
+to be in one of those points where we’re like, okay it’s only 38 miles
+to the next Indian casino, because there’s like an Indian casino every 8
+feet on I40 in Oklahoma and we are going to go visit this guy and it’s
+going to be awesome. So, I am going to knock on the front door of his
+house and it would be like, hey, I wanted to ask you about the pictures
+and I just want to watch the facial reaction, maybe we will video tape
+it, put it online, maybe it will do something on YouTube and I will
+share his love right back with him, it’ll be epically cool.
+
+*Brian Brushwood* It will be great when you start making too much money
+off that content, he will come knocking on your door saying he never
+signed a release.
+
+*Leo Laporte* I have to say that most of the time I get in trouble, it’s
+for stuff like that where I instantly just thought, oh everybody will
+want to see this and post stuff up there.
+
+*Brian Brushwood* But, it’s the internet, it’s the way it works, it is
+the ultimate social tool for sharing – and some people don’t like having
+their stuff shared, just, maybe the pictures, whatever – somebody -- I
+have met kids that are like in little Indie bands that are like, yeah,
+we’ve sold like 800 seven inchers and there has been like – we looked at
+one of the Torrents, there’s been about 75,000 downloads. So, we could
+like all quit our jobs working the graveyard shift at 7/11 if we got
+like 4% of the revenue, like…
+
+*Leo Laporte* I would say that’s revenue they’d never have gotten.
+
+*Brian Brushwood* Well, is it or isn’t it, right because it’s like if
+there was, if they had a medium for distributing those albums where they
+could get some, or may be if just people weren’t scumbags about taking
+stuff that they wouldn’t pay for otherwise. It’s shameful that so many
+people consider it their deity-given right.
+
+*Leo Laporte* I think really that the failing there is that the kids
+working in the 7/11 weren’t creative enough about how to use this
+notoriety that they generated.
+
+*Patrick Norton* This was also at a stage where the file trading was
+fairly new and – it’s like – this was like peer-to-peer sharing pre
+BitTorrent, I shouldn’t have said Torrent,. They basically were able to
+track down a ridiculous number of downloads and it’s like, yeah. So, the
+onus is on them to be creative about something they never asked to be
+distributed on the internet, which is like kind of shameful. On the flip
+side, the internet, it’s still a very wild west kind of thing. So, the
+difficulty that you were having Catherine of kind of saying how I feel
+about it is, probably we all have, of saying what’s the answer to this,
+I don’t know.
+
+*Catherine Hall* I think too like, when it comes to sharing and the
+Internet and all that, there is certain issue of it’s bound to happen
+but as long as like credit is given, like for me for example, people
+posted my images, as long as my name is associated with the image – but
+then there’s been situations where I made a research guide and this guy
+copied the whole thing and blacked out where my copyright was. And
+distributed it and then he tried to tell me he didn’t realize it was
+wrong and I was like, well when you are covering the copyright did that
+maybe occur to you, that’s why you were doing it.
+
+*Leo Laporte* Why else did you cover the copyright.
+
+*Catherine Hall* That made me really, really, really upset. But then I
+have seen other people post my images but they put my name with it and
+it like directs people to my site and that’s fine.
+
+*Dr. Kiki (Kirsten Sanford)* There is also the image, the instance of
+whether or not they are gaining financially from your work and giving
+credit or not, or not giving you kickback from using your [indiscernible] .
+
+*Leo Laporte* I think the word is royalties but I guess kickback instead.
+
+*Catherine Hall* And that was one of the reasons why I got so upset with
+this one situation is he was distributing this to students in his
+workshops and so he was profiting on my work and that was indifferent.
+
+*Dr. Kiki (Kirsten Sanford)* That’s different from just maybe taking it
+and sharing it and saying, I found this really awesome guide and
+*Catherine Hall* came up it and I want to share it with you.
+
+*Leo Laporte* That’s actually actionable, fire up the lawyers; take all
+of his lenses.
+
+*Jason Calacanis* There’s a pretty easy way to deal with this, I think.
+If you look at television shows. which were like the bread and butter of
+the Pirate Bay for a long time, the TV shows are not their bread and
+butter any more because Hulu’s out and it’s much easier to watch it on
+Hulu and..
+
+*Dr. Kiki (Kirsten Sanford)* Or on the network website.
+
+*Jason Calacanis* Yeah, or on ABC’s website and so the movies of the
+people who are suffering from this, why are the movies suffering from
+it, because they put DRM on stuff, because they don’t make stuff
+available in HD, because they have Windows. You just have to throw these
+ideas out of the window and make these things available to consumers for
+a reasonable price and with advertising and that will be fine. They
+don’t want to do that, so until they do they are going to play this cat
+and mouse game, what they should do is they should sell these licenses,
+say if I was the studio head, I would say to the Pirate Bay guys, okay I
+will let you do what you are doing, underneath every single BitTorrent I
+want a thing that explains to people that are going to go to jail if
+they download this and here are people who have and links to the cases
+and that we will prosecute them.
+
+And then I want to the left of it the streaming version that says $0.99,
+click here to do it legally and get the DVD and they see all the legal
+options and I would say to the Pirate guys we will drop the case if you
+give us the website. So, if anybody does these kind of things, they
+build a big enough website, the movie producers should take the Pirate
+Bay over, let these guys go free, they [indiscernible] and then replace
+all the Torrent with the same exact file with advertisements in them and
+they would instantly have a billion dollar business. Thank you.
+
+*Brian Brushwood* Aren’t the Pirate Bay guys just going to start hosting
+their servers in China or somewhere?
+
+*Leo Laporte* Yeah, they are still doing it, I mean that’s not, that’s
+the point, they say in fact on the...
+
+*Brian Brushwood* I actually, I think it would be awesome if the studios
+did that, like next to a torrent had to the $0.99 download button.
+
+*Leo Laporte* I think that’s a great idea but that’s what I am saying
+is, instead of going [indiscernible] and being frustrated and going to
+the lawyers, maybe there is a way to make something out of this and be
+creative about it.
+
+*Dr. Kiki (Kirsten Sanford)* But the $0.99 download isn’t going to
+happen, I mean they are going, if they are going to come out looking at
+it for profit they are not going to do it for $0.99, they are going to
+be like oh, the cost of going to a movie…
+
+*Leo Laporte* But we shouldn’t though, they need to be more
+
+*Dr. Kiki (Kirsten Sanford)* And so suddenly you are paying $10 for
+something that’s not a theatre experience aren’t going to pay for it.
+
+*Brian Brushwood* But it’s not about, it’s not about, it’s basically
+about at least attempting to recoup some of the loss, may be nobody who
+downloaded that video is going to spend 10 bucks for a seat.
+
+*Jason Calacanis* [Indiscernible] are in China or they are in places
+where they can’t get the films anyway, so the statistics of how many
+things were downloaded, a lot of them were downloaded overseas.
+
+*Leo Laporte* But revenue on 10% of theft stream is better than revenue
+on 0% of a theft stream.
+
+*Jason Calacanis* I think you basically have to herd these cats to the
+right place, China is getting very legitimate and the cost of DVD in
+China is down to like 2 or $3 and software the same thing, Microsoft is
+charging less for licenses there. If -- most people over there are
+stealing their Oracle license or stealing their Windows licenses, the
+way it works is, as I was told by people who do business over there, the
+local rep from Microsoft or whoever comes and says we know that you are
+stealing, you have 18 thousand servers, what can you pay, can you pay
+anything, and the guy’s like well, they say pay $50,000 a year. That
+same software might cost 5 million in the US. And the guy says, you know
+what, alright we will give you the fifty, you are being reasonable. So,
+actually the software industry is taking a really cool approach to which
+is let’s lead the horse to water and let’s see if it drinks and they
+just slowly are doing that, nobody wants to break the law and nobody
+wants lawsuits, just give people a decent price and give it to them the
+way they want it, if they want to download it, let them download it. If
+they want to stream it, let them stream it. Be happy they are interested
+in your content and the big battle they have is that their time is going
+to video games, time is going to blogs, time is going to podcasting.
+They’ve got to fight the real enemy. They are fighting their own
+customers; that’s not the enemy. The enemy is the other creative content
+producers...
+
+*Leo Laporte* In the long run, that’s the problem, isn’t? Yeah.
+
+*Brian Brushwood* One footnote to what –
+
+*Jason Calacanis* Yeah, they are so stupid, fighting like...
+
+*Leo Laporte* Right.
+
+*Jason Calacanis* ...they are fighting on this front where –
+
+*Leo Laporte* Fighting with customers, it –
+
+*Catherine Hall* And that’s just not a way to do business.
+
+*Leo Laporte* No.
+
+*Brian Brushwood* As a footnote to this, this is very similar to what
+went – at the end of the 90s with mp3s. Everyone was freaking out,
+nobody is buying CDs anymore and they fought, fought, fought, fought,
+fought it. And then finally they realized, oh wait; this is opening up
+all kinds of new revenue streams. You know now we are selling ringtones,
+ringtones are a giant percentage of money that content manufacturers in
+music make –
+
+*Patrick Norton* No they’re not. Not a giant percentage. They’re are
+giant – source of revenue, but compared to CD sales they were, I think –
+
+*Leo Laporte* Yeah, they make a lot of money on something they weren’t
+making any money on. So, I mean...
+
+*Patrick Norton* Yeah but it’s – what’s that line that the newspapers
+guys keep coming with where it’s “trading analogue dollars for digital
+cents”? I am not sure which of the publishers said that and I mean, I
+think additional revenue streams are great but I think everything’s
+going to be scaling back. I mean is there going to be a $5 million
+action film that’s going to wow us as much as $100 million action film?
+
+*Leo Laporte* Well, if there is demand for action films, then somebody
+is going to make a $100 million action film. And you know what, if
+people are too cheap and they want – and they watch everything on Hulu
+and YouTube, then they won’t be. And you know what, there’s not going to
+be newspapers in about five years. That’s just the way it is, not
+because people don’t want newspapers but because the economics don’t
+make any sense. That’s just the way it is.
+
+*Dr. Kiki (Kirsten Sanford)* And I think that it – honestly, I don’t
+think that’s – I actually, I am one of the people who doesn’t think
+that’s actually true. I think we are not going to see big newspapers. We
+are going to see small local newspapers and there are models that are
+actually starting to work in terms of local ad sales and running local
+news and so I think that we are going to see newspapers but not the big
+ones. I mean the big national, international news. That’s going to be
+gotten online.
+
+*Patrick Norton* Where are you are actually seeing –
+
+*Brian Brushwood* That’s why Jay Leno is going to the 10 o’clock hour
+from the 11 o’clock hours because it’s so much cheaper just to have him
+there, and plus also that niche of high-quality drama is being filled by
+networks like FX with shows like The Shield and Breaking Bad and Mad Men.
+
+*Jason Calacanis* The Shield is awesome. What a great show.
+
+*Dr. Kiki (Kirsten Sanford)* And people are paying for it.
+
+*Leo Laporte* Did you guys see this on Boing Boing? This is an article
+from the New York Times; “Music pirates in Canada. American publishers
+say they are suffering by copyright violations from Canadian pirates.”
+This is published in the New York Times of June 13th 1897. 1897, there
+are publishing house is in Canada that are taking these legitimate –
+publishing music, I guess, it’s music and lyrics.
+
+*Jason Calacanis* Canadians.
+
+*Leo Laporte* Those Canadians.
+
+*Dr. Kiki (Kirsten Sanford)* Is that what started all the jokes?
+
+*Leo Laporte* That’s it, blame Canada. “There are sold from 2 to $0.05 a
+copy even though in the States they sell from 20 to $0.40 a copy.
+Publishers estimate fully five million copies of songs were printed and
+sold in the month of May.” Those Canadians are putting the song
+publishing industry out of business!
+
+*Dr. Kiki (Kirsten Sanford)* And?
+
+*Leo Laporte* In other words, it’s never changed.
+
+*Dr. Kiki (Kirsten Sanford)* Nope.
+
+*Leo Laporte* And it didn’t put music out of business.
+
+*Dr. Kiki (Kirsten Sanford)* No, it just changed. The more things
+change, the more they same; there is truth in that. Yeah, there is truth.
+
+*Leo Laporte* I want to take a little break. Speaking of change, a new
+CEO at MySpace, Jason has some advice. Is it a him or her? It’s a her,
+right?
+
+*Jason Calacanis* No, it’s Owen Van Natta.
+
+*Leo Laporte* Oh, that’s a guy.
+
+*Jason Calacanis* The guy who was COO of Facebook and then one of the
+CEO jobs, Zuckerberg wouldn’t do it and they got in a little tiff and –
+
+*Leo Laporte* All right, Jason will explain what he should do to fix the
+problem whatever that is. Before we do that though, I want to mention my
+friends at GoToMyPC. Citrix, the folks that do those great remote access
+programs like GoToMeeting they do. This is the easiest, the best, the
+most secure, the simplest to use remote access ever and I have tried
+them all. GoToMyPC, I want you to try it for free for 30 days, go to
+gotomypc.com/twit for a free 30-day trial. Here is how easy it is before
+I am done talking. You will have it installed on your computer and then
+you can go home. You could take some time off, you could travel, you
+could see the world, you can enjoy life knowing, safe and secure in the
+knowledge that anytime you need that file, you got to check the inbox or
+you need access to that office computer, you can get there. Don’t be
+chained to your office computer, release yourself. Brian, you’ve
+probably done some escape work.
+
+*Brian Brushwood* Totally, you are talking about from GoToMyPC, right?
+
+*Leo Laporte* Yeah.
+
+*Brian Brushwood* This thing has saved me so many times it’s unreal. I
+was – literally I was in, I was in LA for a show and I got a call from
+some TV group that wanted to – a demo reel, and I didn’t have the
+specific bit they wanted on me. I’m like well it’s back – and I was
+talking about having my wife overnight a DVD and all this staff and then
+finally and believe it or not I was like no, no, no I am hearing all the
+time about the GoToMyPC free 30-day trial. I signed up, I told my wife
+how to install it on the computer.
+
+*Leo Laporte* It’s that easy folks!
+
+*Brian Brushwood* It really was. She walked – it was on next thing I
+know, and I actually I opened up the computer, I opened up the editing
+program, I edited together a specific demo reel from them and then FTPed
+it up to their server, sent them a link.
+
+*Leo Laporte* That’s very cool.
+
+*Brian Brushwood* I had it done in an hour.
+
+*Leo Laporte* I didn’t even know that when I was going to you, I thought
+I was going to ask you about handcuffs. So I am really glad you know
+about it.
+
+*Brian Brushwood* No, I love it.
+
+*Leo Laporte* Gotomypc.com/twit. He’s listened to the ads and used it,
+you can too. It’s free for 30 days, give it a try. Secure, efficient,
+you can even listen to audio. You could surf the net from a shady
+internet cafe in Murmansk. Wherever you are, gotomypc.com, can get you
+to your office computer, Mac or Windows. It’s really great, give it a
+try. We thank them so much for their support of this WEEK in TECH. I
+didn’t even know that when I went to you, *Brian Brushwood*.
+
+*Brian Brushwood* Oh no. Yeah, in fact actually like just the cost of
+just one overnight of a DVD.
+
+*Leo Laporte* It’s worth it.
+
+*Brian Brushwood* Oh yeah, yeah totally.
+
+*Leo Laporte* Well, especially since you’re paid nothing.
+
+*Brian Brushwood* Yeah.
+
+*Leo Laporte* So, I get Jason’s e-mail newsletter. I, and what is it
+15,000? How many people?
+
+*Jason Calacanis* Yeah, 14,000 or something.
+
+*Leo Laporte* It’s awesome.
+
+*Jason Calacanis* tinyurl.com/jasonslist.
+
+*Leo Laporte* It’s still open to the public. You don’t have to be like a
+special.
+
+*Jason Calacanis* No, I mean, it’s a secret url; tinyurl.com.jasonslist.
+
+*Leo Laporte* And do you have ads for escorts on Jason’s list or is that –
+
+*Jason Calacanis* We have a casual encounters list, yeah of course.
+Casual characters off the list.
+
+*Leo Laporte* It’s a mailing list. And Jason how, what, about once a
+week you write a very thoughtful long –
+
+*Jason Calacanis* Once every three weeks.
+
+*Leo Laporte* Three weeks okay. Instead of the blog.
+
+*Jason Calacanis* Yeah, I gave up on the blog because there was just too
+many, too much noise and nonsense.
+
+*Leo Laporte* Yeah, a little like TWiT. So your last post, and I don’t
+even know if you knew that MySpace was looking for a new CEO when you
+wrote it, but your last post said here is what we – MySpace needs to do
+to save itself.
+
+*Jason Calacanis* I had a little bit of inside information there, but
+yeah my name came up in the talk about which is very flattering.
+
+*Leo Laporte* Would you have taken the job?
+
+*Jason Calacanis* How do I say this? You know I am very committed to
+Mahalo obviously, and I think that has a lot more upside than MySpace
+frankly and it’s more exciting for me to be at Mahalo.
+
+*Leo Laporte* Let’s get it telling, that’s really telling in fact.
+
+*Jason Calacanis* And that’s no dig to MySpace. I think MySpace has a
+lot of fundamental problems and I think that most people would say the
+best days are behind it and it’s going to be on the decline. Therefore,
+the chances of it recovering are 50-50 maybe or the chances of it
+catching up to Facebook are 20%. So, essentially it’s just going to be
+years and years of pain. It’s sort of like taking over as AOLs CEO when
+the dialup business is going away. You are basically going to be dealing
+with bad news your whole life.
+
+*Leo Laporte* Is there any upside at any point or is it just all the way
+downhill?
+
+*Jason Calacanis* No, I mean there could upsides, I mean what basically
+has to happen is they have this big asset which is eroding. I mean it’s
+actually, I shouldn’t say it’s eroding. It’s got modest growth compared
+to Facebook which has – and Twitter which have massive growth.
+Obviously, MySpace does have a lot of users.
+
+*Leo Laporte* Of the three; MySpace, Facebook or Twitter, which would
+you like to own?
+
+*Jason Calacanis* Currently today, I would like to own Facebook but I
+think ultimately Twitter is going to win.
+
+*Leo Laporte* Really? Wow.
+
+*Jason Calacanis* Yeah, I do. I will tell you why –
+
+*Brian Brushwood* When it saves us from the Swine flu.
+
+*Jason Calacanis* I think what Twitter is going for. Twitter’s elegant
+simplicity means everybody can use it and so I fully believe every
+single person on the planet will have a Twitter account who is online.
+Whether they are...
+
+*Leo Laporte* That’s probably true, isn’t it? That’s probably true.
+
+*Jason Calacanis* Whether they’re in India – if they are in India on a
+cell phone they are going to have it. They are going to get on Twitter.
+
+*Leo Laporte* Right; why not?
+
+*Jason Calacanis* Because their friends have it; it’s going to spread
+like a virus. And that will be the global rolodex and that will be the
+equivalent of your phone number. People...
+
+*Leo Laporte* It is, it’s digital dial tone.
+
+*Jason Calacanis* It’s your phone number now, especially with the direct
+thing. Like many times I will be going to be meeting with somebody and
+they hit – they direct message be through Twitter instead of texting my
+phone number and I’m like “why did you do that?” Well pretty simple;
+they don’t have to remember my phone number. They know it’s going to
+come to my phone, it’s a direct message; boom.
+
+*Leo Laporte* That’s really interesting.
+
+*Jason Calacanis* I don’t look at Twitter as much as a blogging service
+as I do a namespace like Novell Network or any of these other things. So
+I think they are going to win that race. I don’t think anybody can stop
+them and you are going to log in to the majority of your sites and get
+the majority of your direct communication through Twitter. And that’s
+pretty powerful, and you don’t want to have worry about monetizing it,
+so I think the Twitter guys have a brand for the ages.
+
+*Leo Laporte* Well you do have to worry about monetizing it but you were
+just saying that you can –
+
+*Jason Calacanis* Not really. You know we have such scale – it’s people.
+
+*Leo Laporte* It will take care of itself.
+
+*Jason Calacanis* There are people at AOL who I would sometimes shake my
+head and go, I can’t believe this person is making money. You know this
+like, mid level manager running some group. But it’s like well, if you
+point the AOL homepage at a terrible product and it gets half a million
+people a day it’s going to be a viable business.
+
+*Brian Brushwood* So I am surprised at the three options you gave *Jason
+Calacanis*, because all the scuttlebutt was that he was going to take
+over at Geocities.
+
+*Jason Calacanis* They actually wanted me at the Geocity shop. They were
+like we can shut this off, or give it to Jason to run.
+
+*Leo Laporte* You are kidding.
+
+*Jason Calacanis* And they were like –
+
+*Leo Laporte* Well I know Miller’s a friend of yours, Miller bought
+Weblogs.
+
+*Jason Calacanis* Yeah, he’s a friend of mine, and he’s on the board of
+Mahalo, and News Corp, he’s an investor in Mahalo, so it’s all very
+incestuous. I don’t think I would want the job to be totally honest,
+because I love what I’m doing right now. My optimal size for running a
+company is I like 20 to 30 people, 40 people. And I wouldn’t want to
+have that many – when I was at AOL I had over 100 people reporting to
+me, and it was just not as much fun.
+
+*Leo Laporte* So what would you do if you were in charge of MySpace? How
+could – can it be saved? Or is it just a long, grim slide down.
+
+*Jason Calacanis* No, it can be saved. I think what you have to do is
+you’re going to have to be bold, and you’re going to have to invest. And
+the problem is –
+
+*Leo Laporte* And what would you invest it? Would you buy Twitter?
+
+*Jason Calacanis* Well, you won’t be able to. If Microsoft can’t buy
+Twitter, then –
+
+*Leo Laporte* Twitter is now clearly not for sale. If your vision of
+what Twitter is –
+
+*Jason Calacanis* Not for sale.
+
+*Leo Laporte* It’s not for sale.
+
+*Jason Calacanis* No way.
+
+*Leo Laporte* At no price.
+
+*Jason Calacanis* They have had offers that are very significant and
+they said no. So –
+
+*Leo Laporte* It would be crazy to sell at this point.
+
+*Jason Calacanis* Actually, my advice to him would be, if he gets over a
+$1 billion, to sell it. But that’s only because my belief is that the
+multi-billion dollar businesses don’t come along that often and if you
+do get one, selling it’s not a bad option. However, I don’t think he is
+in it for the money. He made enough off of the last company.
+
+*Leo Laporte* Right.
+
+*Jason Calacanis* So, that’s a mitigating factor.
+
+*Leo Laporte* Right.
+
+*Jason Calacanis* I think, it’s about legacy for him. So, if this is
+your second homerun, its legacy is what’s important, not the amount of
+money you make.
+
+*Leo Laporte* Right.
+
+*Jason Calacanis* So, he is not going to. If it’s a first time
+entrepreneur I’d say, like, sell immediately! Like Zuckerberg is crazy
+for not selling to Microsoft. According to information I have, like,
+offered close to $10 million – $10 billion for that company. They
+invested at $15 billion, but they wanted to buy it in the high billions,
+like 7, 8, 9 billon from what I heard from VCs. .
+
+*Leo Laporte* Should Mark have sold it at that price? It sounds like yes.
+
+*Jason Calacanis* Absolutely.
+
+*Leo Laporte* That’s crazy.
+
+*Jason Calacanis* But you know what, he’s another one who’s kooky. He
+thinks he is the next Bill Gates and he doesn’t want to do anything but
+build a $100 billion company.
+
+*Leo Laporte* Right.
+
+*Jason Calacanis* But it’s very foolish when you are 24 years old to
+think like that in my mind, because you don’t have a chance to exit –
+the number of people in the world to had a chance to exit above $1
+billion is like 10 people or 100 people, whatever it is. So, anyway, the
+things that MySpace should do is number one, I think mobile is the
+future of social networking. In Japan and Seoul, 90% of social
+networking occurs on your phone. Twitter is a good example of that, so I
+would just go absolutely crazy making a G1 application, Android
+application, iPhone applications, new applications.
+
+*Leo Laporte* Mobile is the key.
+
+*Jason Calacanis* And just try to win mobile and crush and like maybe
+buy that Loop stuff or copy it immediately and really start to get into
+mobile social networking. Mobile SMS.
+
+*Leo Laporte* There is still an opportunity there, you think? It’s not –
+
+*Jason Calacanis* Absolutely. In Tokyo, I was with Tyler. We are sitting
+on a train, we got five people on each bench next to us. Eight out of
+ten had their phones out and 8 out of 8 were doing something on a social
+network or 7 of 8 were doing something socially. You know, a game or
+email or that kind of stuff. And so that leads to the second thing,
+which is casual games make a lot of money, a lot of money. And they
+takes a lot of time. And who do you play games with? You play games with
+your friends, so a very natural fit and companies and Zhang and RockYou
+are crushing it. So, I would buy one of those companies or build a bunch
+of applications and just have tons of games inside of MySpace, that’s a
+no-brainer. And I would build some sort of a virtual currency inside of
+it and try to make money that way, because that’s how social networks
+make money.
+
+*Leo Laporte* We are starting to lose your connection, Jason. I’m not
+sure what’s going on.
+
+*Jason Calacanis* Sorry.
+
+*Leo Laporte* But the gist is there, and I think to read more,
+subscribe. What is it? tinyurl.com/jasonslist.
+
+*Jason Calacanis* Yeah. tinyurl.com/jasonslist.
+
+*Leo Laporte* I think it’s very interesting though that there is still
+room in this mobile space, and yet you feel, and I think actually I have
+to agree with you, now that you have articulated it that way, that
+Twitter is the dial tone for the 21st century. That’s kind of an amazing
+thought.
+
+*Jason Calacanis* It is.
+
+*Leo Laporte* Well, others have said. Dave Winer said, oh no, there will
+be a thousand Twitters in a few years. He feels like every media company
+is going to create their own Twitter. You don’t think so?
+
+*Jason Calacanis* No.
+
+*Patrick Norton* Cause there’s thousand search engines, like two matter.
+
+*Leo Laporte* Right.
+
+*Catherine Hall* Yeah.
+
+*Brian Brushwood* But isn’t there literally a million social networks
+with Ning now, didn’t they hit one million? Like literally there is one
+million MySpaces out there.
+
+*Leo Laporte* That’s amazing. Yeah. Yeah, right.
+
+*Brian Brushwood* But none of them – I guess, I don’t know, they are
+good like, for example, my friends run the website spill.com which is
+very targeted, very specific and they have a very passionate base, but
+there is no chance their website is going to threaten Facebook or
+MySpace anytime soon. Likewise, I don’t think Twitter is going to go
+away, so much as you may have micro-Twitters the way Ning has created
+these micro-MySpaces.
+
+*Leo Laporte* Right, very interesting, I can hear the dinner bell
+ringing upstairs. That made you hungry, huh Patrick?
+
+*Patrick Norton* Well, it just means if I want to see my child before he
+goes to sleep I got to head out soon.
+
+*Leo Laporte* You go boy, it’s great to talk to you. *Patrick Norton* is
+the host of Tekzilla.com, and next time you come up and you join us in
+here in the studio, it’d be great to see you.
+
+*Patrick Norton* I will. Good to talk to everybody.
+
+*Leo Laporte* Yeah.
+
+*Catherine Hall* Bye Patrick.
+
+*Patrick Norton* Bye.
+
+*Leo Laporte* *Jason Calacanis* is Mr. Mahalo.com, that’s the place to
+go for Mahalo. Yes sir. And you are doing a new podcast called This Week
+in Startups.
+
+*Jason Calacanis* It’s going to start on Friday and thank you for
+letting me use the name, you are very gracious about that. I know you
+don’t own it, but I did ask permission. Everybody should know that.
+
+*Leo Laporte* That’s quite all right with me, yeah. I am glad you’re
+doing it. And Kevin Pollak’s show is now at 5 O’clock Pacific – Eastern.
+
+*Jason Calacanis* 5 O’clock on Sundays, yeah.
+
+*Leo Laporte* Every Sunday on UStream, is that where he is doing it.?
+
+*Jason Calacanis* I think right now, it’s Stickam.
+
+*Leo Laporte* Stickam, that’s right.
+
+*Jason Calacanis* And then trying to get a sponsor and trying to get one
+of these guys to support it and yeah, so –
+
+*Leo Laporte* So, that’s out of your studio?
+
+*Jason Calacanis* Yeah, we have a studio here which basically – modeled
+it after yours and if you ever want to use it or anybody wants to use
+the studio, they can just email me jason@mahola.com. We have a
+TriCaster. We’re, sort of – the idea is to let people use the studio to
+make shows and they give us a plug and that’s it.
+
+*Leo Laporte* And when is your show, a week from – Friday?
+
+*Jason Calacanis* It’s going to be out this Friday, 1 p.m. and my guest
+is going to be Brian Alvey, who was my partner on Weblogs Inc., and who
+is doing a new company called Crowd Fusion, which is like a crazy, crazy
+blog publishing system. So, it’s basically going to be a little intro
+from me, an interview with the guest and then some news in
+startup-companies specifically. So, not like tech news, like – we won’t
+talk about the iPhone but we will talk about here is a company, how they
+raised money, how they built their product. So it’s a little different
+than TWiT, I think.
+
+*Leo Laporte* No, it sounds great. And of course, it’s 1 o’clock and you
+will be doing that on Stickam as well?
+
+*Jason Calacanis* We will do, I think, Stickam, yeah.
+thisweekinstartups.com. It’s not designed yet, we are designing a logo
+this week and we are just going to throw it together and see how it goes.
+
+*Leo Laporte* Cool. That’s very exciting.
+
+*Jason Calacanis* Very casual, yeah. And yeah, thanks for having me on.
+
+*Leo Laporte* Always a pleasure. Love having you on.
+
+*Jason Calacanis* Love having Audible.
+
+*Leo Laporte* Audible loves you. Yes.
+
+*Jason Calacanis* Love having – I actually registered
+thisweekinaudible.com.
+
+*Leo Laporte* You wasted no time.
+
+*Jason Calacanis* If folks from Audible are listening, Leo and I are
+going to produce your show for you.
+
+*Leo Laporte* We talked about it, actually.
+
+*Jason Calacanis* We should do it, let’s give them a show. This Week in
+Audible.
+
+*Leo Laporte* We talked about it. Next time come up and we will have
+some great wine from Gary’s Wine.
+
+*Jason Calacanis* I like a little port, if that’s possible.
+
+*Leo Laporte* We can do a port.
+
+*Jason Calacanis* If we do a port and a dessert wine; I like the honey,
+sweetness kind of thing.
+
+*Leo Laporte* You are a fan of the stickies.
+
+*Jason Calacanis* I like the sticky, like honey.
+
+*Leo Laporte* Kiki’s going “gak, gak…”
+
+*Jason Calacanis* I like the port. I have been drinking port – my wife
+says I should drink a glass of red wine every night, because I am high
+stung…
+
+*Leo Laporte* Port’s good.
+
+*Jason Calacanis* Anxiety and stress and…
+
+*Leo Laporte* I will tell you what, you come up here and we will have
+port and cigars. How about that?
+
+*Jason Calacanis* Oh, I will bring some Cubans, or I should say –
+
+*Brian Brushwood* And their cigars!
+
+*Leo Laporte* Bring the Cubans and their cigars.
+
+*Jason Calacanis* They’ll press the wine for us. No, I will bring some
+Cubans. Not Cubans, but they are very similar.
+
+*Leo Laporte* Yeah, from the Dominican Republic, but Cuban seas.
+
+*Dr. Kiki (Kirsten Sanford)* Wink wink.
+
+*Leo Laporte* Bring some Cubans. Thank you Jason.
+
+*Jason Calacanis* Pleasure.
+
+*Leo Laporte* Take care. *Catherine Hall* is a photographer, one of the
+best I’ve ever had the pleasure of working with. She is just brilliant
+and you can find her stuff on her website catherinehall.net, and it was
+great having you in studio today.
+
+*Catherine Hall* Thank you.
+
+*Leo Laporte* Catherine was here for the radio show and we just said
+stick around for TWiT, and gave her some wine.
+
+*Catherine Hall* He couldn’t get rid of me.
+
+*Leo Laporte* That’s a pleasure; it’s really nice to have you in. Also,
+want to thank *Brian Brushwood* of Scam School fame
+
+*Brian Brushwood* We got to get you outside of here to a bar. Teach you
+some scams.
+
+*Leo Laporte* All right, I would love to do that. The old quarter
+through the bar trick or something like that, be really fun. And
+shwood.com is the website
+
+*Brian Brushwood* shwood.com No “c” in shwood.
+
+*Leo Laporte* I should have done everybody’s Twitter handle.
+
+*Brian Brushwood* @shwood
+
+*Leo Laporte* Yours is @shwood.
+
+*Brian Brushwood* Yeah.
+
+*Leo Laporte* Catherine is @catherine_hall.
+
+*Brian Brushwood* K or C?
+
+*Catherine Hall* C, like Catherine the great.
+
+*Leo Laporte* Right. She is Catherine the great. Kiki is drkiki.
+
+*Dr. Kiki (Kirsten Sanford)* I am.
+
+*Leo Laporte* drkiki.
+
+*Catherine Hall* drkiki.
+
+*Dr. Kiki (Kirsten Sanford)* I like it.
+
+*Leo Laporte* drkiki.
+
+*Brian Brushwood* drkiki!
+
+*Catherine Hall* drkiki!
+
+*Brian Brushwood* Haha!
+
+*Leo Laporte* Okay. I, Dr. Kiki. And she is also at kirstensanford.com.
+
+*Dr. Kiki (Kirsten Sanford)* I am.
+
+*Leo Laporte* And the host of This Week in Science and our newest host
+on This Week in Tech on the TWiT network, we’re going to do a science
+show starting live on TWiT TV, which would be live.twit.tv every
+Thursday at 6 p.m. Eastern, 3 p.m. Pacific, which is 2000 UTC. And now
+ladies and gentlemen for the first time anywhere, except in her husband
+Marshall’s ear, the name of the show.
+
+*Dr. Kiki (Kirsten Sanford)* It’s so exciting. Dr. Kiki’s Science Hour,
+with *Leo Laporte*.
+
+*Leo Laporte* Well, with *Leo Laporte*, you can leave that part out, I
+don’t like him anyway. That’s good, Dr. Kiki’s Science Hour will make
+its debut on Thursday. I love that.
+
+*Dr. Kiki (Kirsten Sanford)* We came up, I came up with all sorts of
+different names and I had this idea, I’ll keep science out of it,
+because I want to talk about just the way that…
+
+*Leo Laporte* It’s all science.
+
+*Dr. Kiki (Kirsten Sanford)* Everything is science, but it’s just a way
+of looking at the world. But then I was like, you know, this is just
+really – people will get it. You want to describe what the show is about.
+
+*Leo Laporte* Yes, I agree.
+
+*Dr. Kiki (Kirsten Sanford)* It’s an hour of science, once a week.
+Science Hour. Yay!
+
+*Leo Laporte* Couldn’t be better. And we will be talking about, I think,
+bird flu or rather swine flu this week, yeah?
+
+*Dr. Kiki (Kirsten Sanford)* Yeah. And actually, I don’t know what...
+
+*Leo Laporte* I have a friend who is an epidemiologist.
+
+*Dr. Kiki (Kirsten Sanford)* Oh, that will be fabulous. I was thinking
+that we could kind of temper that. Also, we could get an epidemiologist,
+maybe someone from the CDC or your friend.
+
+*Leo Laporte* My friend, Bill Keen [ph]. He was my college roommate. He
+is the Director of Public Health for the state of Oregon. So, masters in
+public health and expert on parasitic diseases.
+
+*Dr. Kiki (Kirsten Sanford)* I’m sure he’s got some info on viral.
+
+*Leo Laporte* But he has also got a little swine flu.
+
+*Dr. Kiki (Kirsten Sanford)* Yeah.
+
+*Leo Laporte* When the big tomato – problem with the tomatoes and the E.
+coli, he was interviewed everywhere.
+
+*Dr. Kiki (Kirsten Sanford)* Bacteria...
+
+*Leo Laporte* I saw him on CNN and everywhere, so he is very active in
+this state – but a real expert in public health. He will have a lot to say.
+
+*Dr. Kiki (Kirsten Sanford)* That would be good. I think it would –
+
+*Brian Brushwood* I was going to ask you, do you think he gets excited
+when the – oh, good another disease!
+
+*Leo Laporte* Let me tell you something –
+
+*Dr. Kiki (Kirsten Sanford)* I think no.
+
+*Leo Laporte* I had Thanksgiving with him once and he started by saying
+“do you know how many bacterial infections you can get from a turkey?”
+You might know this is as a bird –
+
+*Dr. Kiki (Kirsten Sanford)* Salmonella is the worst.
+
+*Leo Laporte* It’s the worst. I got a little nervous when he started
+handling the turkey with a rubber glove after he it was cooked. He said
+these things are deadly. You could – it could kill you in so many ways.
+
+*Dr. Kiki (Kirsten Sanford)* But enjoy your turkey!
+
+*Leo Laporte* But enjoy your turkey. So, he – Bill Keen, we’ll see if we
+can get him on Thursday.
+
+*Dr. Kiki (Kirsten Sanford)* That would be great.
+
+*Leo Laporte* It would be really great to get him on.
+
+*Dr. Kiki (Kirsten Sanford)* I was thinking also to add a little level
+of kind of the fun and where it could potentially go, Scott Ziegler has
+written a – his book –
+
+*Leo Laporte* Perfect.
+
+*Dr. Kiki (Kirsten Sanford)* His trilogy he is working on, most recent
+one, Contagious, that came out. It’s all about – I mean, it’d be really
+fun to get him on.
+
+*Leo Laporte* Oh, this is going to be fun.
+
+*Dr. Kiki (Kirsten Sanford)* I think I’m going to try and get in touch
+with him and see if he’ll be able to do it, so Scott if you are out there…
+
+*Leo Laporte* And one thing we are going to really try to do on this
+show is take calls, so we will be using TalkShoe for that and so if you
+don’t have a TalkShoe account, you might want to find out about it.
+TalkShoe.com, and we will be taking calls towards the end of the show.
+So, we will do about 40 minutes and then we will take some calls.
+
+*Dr. Kiki (Kirsten Sanford)* Yeah, we will probably do a lead in,
+background, then the discussion with everyone who is either here or
+calling in virtually. And then get everybody else to be involved in the
+show. I mean, I think one of the big aspects of this that I’m excited
+about for this show is being able to incorporate everybody’s questions,
+because I mean, like we said science is a way of looking at the world.
+Everybody is affected by how the world works. We are a part of it and
+so, let’s all –
+
+*Leo Laporte* I’m excited.
+
+*Dr. Kiki (Kirsten Sanford)* Let’s all be involved.
+
+*Leo Laporte* I’ve wanted to do a show about science for a long time. I
+can’t think of anybody better to do it with. And you are going to follow
+Maxwell’s House which is a show about getting deep into a single
+subject, and so it’s going to be a perfect – my idea of a well-spent
+Thursday afternoon.
+
+*Dr. Kiki (Kirsten Sanford)* Two hours of mad braininess.
+
+*Leo Laporte* Brain expansion.
+
+*Dr. Kiki (Kirsten Sanford)* Mad!
+
+*Leo Laporte* Thank you, Kiki.
+
+*Dr. Kiki (Kirsten Sanford)* You’re welcome.
+
+*Leo Laporte* So great to have you. A reminder, we have got a TWiT Picks
+page, we invite you to visit twit.tv/picks. I noticed Colleen picked the
+Android G1 phone yesterday. She says, warning, not intended for use by
+Apple fanboys. That’s why we love Colleen. Also, a reminder that our
+wine today and every week is brought to you by Gary’s Wine at
+garyswine.com. We had a delicious Cab today that we all agreed was A+,
+the Innisfree Cabernet Sauvignon. You can find that at
+garyswine.com/twitlive. I thank you all for being here. Really great to
+talk to you, we will see you again next week, I hope. Another TWiT is in
+the can.
