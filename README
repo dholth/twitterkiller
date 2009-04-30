@@ -1,0 +1,41 @@
+TwitterKiller
+=============
+
+A TWiT podcast improver.
+
+Like many of you, I grew tired of listening to the This Week in Tech
+(http://twit.tv/192) panel blabber on, and on, and on about how amazing
+Twitter is. I enjoy the rest of the show, but they have to ruin it with
+their incessant fawning.
+
+Not any more!
+
+Ladies and gentlemen I present to you: TwitterKiller. This fabulous
+program uses pocketsphinx (http://www.speech.cs.cmu.edu/pocketsphinx/)
+and gnonlin (http://gnonlin.sourceforge.net/) to detect, mark, and 
+edit out sentences containing the word 'TWITTER'. The result: e.g.
+TWiT0192H.redacted.ogg, a shorter podcast with significantly reduced
+TWITTER. Enjoy TWiT again with TwitterKiller, the lean, mean,
+TWITTER-reducing machine.
+
+Alternatively, by switching "if not omit:" to "if omit:" in
+Media.redact(), you can produce an all-Twitter TWiT.
+
+Technical Information
+=====================
+This program uses a language model built by submitting
+part of the human-generated TWiT episode 192 transcript to
+http://www.speech.cs.cmu.edu/tools/lmtool.html, in the 3286/
+directory. You may have poorer results with other episodes of TWiT.
+
+For more consistent results, the program always transcodes Mp3 to a WAV
+with the same name before performing other operations, even if the .wav
+file already exists, in which case it will be overwritten. To skip this,
+select the generated .wav as the input file when running a second time.
+
+pocketsphinx and its gstreamer plugin are not provided as a package
+in Ubuntu. The must be compiled and installed manually before
+this program can run.
+
+Daniel Holth <dholth@fastmail.fm>
+April, 2009.

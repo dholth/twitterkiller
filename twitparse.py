@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- encoding: utf-8 -*-
+# Very simple text processing to make TWiT transcripts more appropriate
+# for the CMU Sphinx language model tool.
 
 speaker = []
 

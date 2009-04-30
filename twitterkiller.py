@@ -1,6 +1,24 @@
 #!/usr/bin/python
-# Daniel Holth <dholth@fastmail.fm>
-# April, 2009
+#
+# Copyright (c) 2009 Daniel Holth <dholth@fastmail.fm>
+#
+# Permission is hereby granted, free of charge, to any person obtaining a
+# copy of this software and associated documentation files (the "Software"),
+# to deal in the Software without restriction, including without limitation
+# the rights to use, copy, modify, merge, publish, distribute, sublicense,
+# and/or sell copies of the Software, and to permit persons to whom the
+# Software is furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included
+# in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+# THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+# OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+# ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+# OTHER DEALINGS IN THE SOFTWARE.
 
 import gobject
 gobject.threads_init()
@@ -24,17 +42,36 @@ class Main(object):
         self.setupWindow()
         self.window.show_all()
 
+        self.aboutTree = None
+
+    def about(self, widget):
+        self.aboutDialog.show_all()
+
+    def about_hide(self, widget):
+        print "bye about"
+        self.aboutDialog.hide()
+
     def setupWindow(self):
-        self.wTree = gtk.glade.XML("twitterkiller.glade", "mainwindow")
+        self.wTree = gtk.glade.XML("twitterkiller.glade")
         self.window = self.wTree.get_widget("mainwindow")
+        self.aboutDialog = self.wTree.get_widget("aboutdialog")
         self.window.connect("destroy", self.destroy)
         self.textview = self.wTree.get_widget("textview")
         self.textbuf = self.textview.get_buffer()
+        self.statusbar = self.wTree.get_widget("statusbar")
         signals = { "on_file_activated": self.file_set,
-                    "on_mainwindow_destroy": self.destroy }
+                    "on_mainwindow_destroy": self.destroy,
+                    "on_aboutmenu_activate": self.about, 
+                    "on_aboutdialog_response": self.about_hide,
+                    "on_file_open": self.file_open }
         self.wTree.signal_autoconnect(signals)
-        
+       
+    def file_open(self, widget):
+        """'Open' from the menu bar"""
+        self.wTree.get_widget("filechooserbutton").activate()
+
     def file_set(self, widget):
+        self.wTree.get_widget("file_open").set_sensitive(False)
         widget.set_sensitive(False)
         filenames = widget.get_filenames()
         c2w = self.media.convertToWav(filenames[0])
@@ -43,27 +80,22 @@ class Main(object):
         self.intermediate = destination
         # if pipeline is None then we already have a .wav file
         if pipeline is None:
-            if False:
-                import utterances
-                self.media.utterances = utterances.utterances
-                self.redact()
-            else:
-                self.find_keywords(destination)
+            self.find_keywords(destination)
             return
         bus = pipeline.get_bus()
         bus.add_signal_watch()
         bus.connect("message", self.on_wav_message, destination)
         self.pipeline = pipeline
         self.state = "TRANSCODE"
-        gtk.gdk.threads_enter()
+        self.statusbar.push(0, "Transcoding to .wav ...")
         pipeline.set_state(gst.STATE_PLAYING)
-        gtk.gdk.threads_exit()
 
     def find_keywords(self, wavfile):
         """Find keywords from a .wav file."""
         print "Analyzing", wavfile
         pipeline = self.media.findKeywords(wavfile)
         self.state = "ANALYZE"
+        self.statusbar.push(0, "Finding keywords in audio ...")
         bus = pipeline.get_bus()
         bus.connect("message", self.on_keywords_message)
         pipeline.set_state(gst.STATE_PLAYING)
@@ -76,6 +108,7 @@ class Main(object):
             print message
         elif t == gst.MESSAGE_EOS:
             print "Done transcoding to .wav"
+            self.statusbar.pop(0)
             self.find_keywords(data)
         elif t == gst.MESSAGE_ERROR:
             print message
@@ -95,6 +128,7 @@ class Main(object):
                 self.textbuf.end_user_action()
         elif t == gst.MESSAGE_EOS:
             print "Done analyzing text"
+            self.statusbar.pop(0)
             self.redact()
 
     def redact(self):
@@ -103,15 +137,18 @@ class Main(object):
         bus = pipeline.get_bus()
         bus.add_signal_watch()
         bus.connect("message", self.on_redact_message)
+        self.statusbar.push(0, "Redacting keywords from original ...")
         pipeline.set_state(gst.STATE_PLAYING)
-        self.redact_pipeline = pipeline
+        self.redact_pipeline = pipeline        
 
     def on_redact_message(self, bus, message, data=None):
         t = message.type
         if t == gst.MESSAGE_EOS:
             print "Done editing."
+            self.statusbar.pop(0)
+            self.statusbar.push(0, "Finished!")
             self.redact_pipeline.set_state(gst.STATE_NULL)
-            self.destroy(self.window)
+            # self.destroy(self.window)
         else:
             print "Redact Message", t
 
@@ -177,7 +214,9 @@ class Media(object):
         asr.connect('result', self.asr_result)
         asr.props.dict = '3286/3286.dic'
         asr.props.lm = '3286/3286.lm'
-        asr.props.latdir = '/tmp/lattice'
+        # put additional information about each utterance, one file per
+        # utterance, in latdir:
+        # asr.props.latdir = '/tmp/lattice'
         asr.props.configured = True
 
         bus = self.pipeline.get_bus()
@@ -187,19 +226,18 @@ class Media(object):
         self.pipeline.set_state(gst.STATE_PAUSED) 
         return self.pipeline
 
+    # The vader (voice activity detector) turned out to be the most
+    # reliable way to find the start and end time of each utterance:
     def vader_start(self, vader, *args):
-        print "VS", args
         self.last_vs = args[0]
 
     def vader_end(self, vader, *args):
-        print "VE", args
         self.last_ve = args[0]
 
     def new_buffer(self, appsink):
         text = appsink.props.last_buffer.data
         timestamp = appsink.props.last_buffer.timestamp
         self.bufferutts.append((self.last_vs, text))
-        print "NB", timestamp, text
 
     def asr_partial_result(self, asr, text, uttid):
         """Forward partial result signals on the bus to the main thread."""
@@ -241,14 +279,17 @@ class Media(object):
 
     def redact(self, source_file):
 
-        pipeline = gst.parse_launch("gnlcomposition name=compo audioconvert name=conv ! vorbisenc ! oggmux ! filesink name=redacted")
+        pipeline = gst.parse_launch("gnlcomposition name=compo !" 
+            + " identity single-segment=True name=landing !" 
+            + " audioconvert name=conv ! vorbisenc ! oggmux !" 
+            + " filesink name=redacted")
 
         product = pipeline.get_by_name("redacted")
         product.set_property("location", os.path.splitext(source_file)[0] + ".redacted.ogg")
 
         compo = pipeline.get_by_name("compo")
 
-        self.audioconvert = pipeline.get_by_name("conv")
+        self.landing_pad = pipeline.get_by_name("landing")
 
         if self.utterances:
             self.utterances.append(self.utterances[-1])
@@ -258,7 +299,7 @@ class Media(object):
         elapsed = 0
         for span in spanner.span(butts):
             omit, start, end = span
-            if omit:
+            if not omit:
                 chunk_length = end - start
                 if chunk_length == 0:
                     continue
@@ -270,31 +311,22 @@ class Media(object):
                 filesrc.props.media_duration, chunk_length
                 compo.add(filesrc)
                 elapsed += chunk_length
-   
+  
+        # It hangs if there are no spans.
+        
+        # We should insert the tail end of the podcast here.
+        
         compo.props.start = 0
         compo.props.duration = elapsed 
         compo.props.media_start = 0
         compo.props.media_duration = elapsed
-
-        # I think a gnonlin element with duration=0 should play to the end of
-        # the source.
-        #
-        # chunk_length = span[2] - span[1]
-        # filesrc = gst.element_factory_make("gnlfilesource")
-        # filesrc.set_property("location", source_file)
-        # filesrc.set_property("start", elapsed)
-        # filesrc.set_property("duration", chunk_length)
-        # filesrc.set_property("media-start", span[1])
-        # filesrc.set_property("media-duration", chunk_length)
-        # compo.add(filesrc)
 
         compo.connect("pad-added", self.on_pad)
         pipeline.set_state(gst.STATE_PAUSED)
         return pipeline
 
     def on_pad(self, comp, pad):
-        print "ON PAD"
-        convpad = self.audioconvert.get_compatible_pad(pad, pad.get_caps())
+        convpad = self.landing_pad.get_compatible_pad(pad, pad.get_caps())
         pad.link(convpad)
 
 if __name__ == "__main__":

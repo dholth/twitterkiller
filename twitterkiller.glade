@@ -23,12 +23,12 @@
                   <widget class="GtkMenu" id="menu1">
                     <property name="visible">True</property>
                     <child>
-                      <widget class="GtkImageMenuItem" id="imagemenuitem2">
+                      <widget class="GtkImageMenuItem" id="file_open">
                         <property name="label">gtk-open</property>
                         <property name="visible">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
-                        <signal name="activate" handler="on_open"/>
+                        <signal name="activate" handler="on_file_open"/>
                       </widget>
                     </child>
                     <child>
@@ -57,11 +57,12 @@
                   <widget class="GtkMenu" id="menu3">
                     <property name="visible">True</property>
                     <child>
-                      <widget class="GtkImageMenuItem" id="imagemenuitem10">
+                      <widget class="GtkImageMenuItem" id="aboutmenuitem">
                         <property name="label">gtk-about</property>
                         <property name="visible">True</property>
                         <property name="use_underline">True</property>
                         <property name="use_stock">True</property>
+                        <signal name="activate" handler="on_aboutmenu_activate"/>
                       </widget>
                     </child>
                   </widget>
@@ -114,7 +115,7 @@
           </packing>
         </child>
         <child>
-          <widget class="GtkProgressBar" id="progressbar1">
+          <widget class="GtkProgressBar" id="progressbar">
             <property name="visible">True</property>
           </widget>
           <packing>
@@ -130,6 +131,56 @@
           <packing>
             <property name="expand">False</property>
             <property name="position">4</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="GtkAboutDialog" id="aboutdialog">
+    <property name="type_hint">normal</property>
+    <property name="has_separator">False</property>
+    <property name="program_name">TwitterKiller</property>
+    <property name="copyright" translatable="yes">Daniel Holth
+dholth@fastmail.fm
+2009</property>
+    <property name="comments" translatable="yes">Improve TWiT by taking out the Twitter.</property>
+    <property name="license" translatable="yes">Copyright (c) 2009 Daniel Holth &lt;dholth@fastmail.fm&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the "Software"),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+</property>
+    <child internal-child="vbox">
+      <widget class="GtkVBox" id="dialog-vbox1">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child>
+          <placeholder/>
+        </child>
+        <child internal-child="action_area">
+          <widget class="GtkHButtonBox" id="dialog-action_area1">
+            <property name="visible">True</property>
+            <property name="layout_style">end</property>
+          </widget>
+          <packing>
+            <property name="expand">False</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
           </packing>
         </child>
       </widget>

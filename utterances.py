@@ -1,3 +1,6 @@
+# Sample transcription data from TWiT episode 192.
+# The format is (Contains keyword?, start of utterance in nanoseconds,
+# utterance id, recognized speech)
 utterances = [(False, 0, '', 'BEGIN'),
  (False,
   21548117914L,
