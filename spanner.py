@@ -7,12 +7,14 @@ def span(spans):
     last = i.next()
     for s in i:
         if s[0] != last[0]:
-            yield (last[0], last[1], s[1])
+            yield (last[1], s[1])
             last = s
         else:
             pass
-    # breaks if i is empty
-    yield (last[0], last[1], s[1])
+    try:
+        yield (last[1], s[1])
+    except NameError:
+        pass
 
 if __name__ == "__main__":
     import utterances

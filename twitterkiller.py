@@ -277,29 +277,32 @@ class Media(object):
         self.utterances.append((positive, position, uttid, hyp))
         print self.utterances[-1]
 
-    def redact(self, source_file):
+    def redact(self, source_file, editlist=None):
+        butts = [(False, 0)] + [(self.keyword in text, timestamp) for timestamp, text in self.bufferutts]
+        import spanner
+        return self.edit(spanner.span(butts))
 
-        pipeline = gst.parse_launch("gnlcomposition name=compo !" 
-            + " audioconvert name=landing ! identity single-segment=True !" 
-            + " audiorate ! vorbisenc ! oggmux !" 
+    def edit(self, source_file, editlist=[]):
+        """Edit source_file to include only segments from editlist,
+        a list of (start, end) tuples.
+        
+        Return a paused gstreamer pipeline."""
+
+        # identity single-segment=true ! " # buggy. should go right
+        # before vorbisenc.
+        pipeline = gst.parse_launch("gnlcomposition name=compo " 
+            + " audioconvert name=landing ! vorbisenc ! oggmux ! " 
             + " filesink name=redacted")
 
         product = pipeline.get_by_name("redacted")
         product.set_property("location", os.path.splitext(source_file)[0] + ".redacted.ogg")
 
         compo = pipeline.get_by_name("compo")
-
         self.landing_pad = pipeline.get_by_name("landing")
 
-        if self.utterances:
-            self.utterances.append(self.utterances[-1])
-        # (omit, position, uttid, hyp)
-        butts = [(False, 0, "", "")] + [(self.keyword in text, timestamp, "", text) for timestamp, text in self.bufferutts]
-        import spanner
         elapsed = 0
-        for span in spanner.span(butts):
-            omit, start, end = span
-            if not omit:
+        for span in editlist:
+            start, end = span
                 chunk_length = end - start
                 if chunk_length == 0:
                     continue
@@ -314,8 +317,6 @@ class Media(object):
   
         # It hangs if there are no spans.
         
-        # We should insert the tail end of the podcast here.
-        
         compo.props.start = 0
         compo.props.duration = elapsed 
         compo.props.media_start = 0
@@ -324,6 +325,7 @@ class Media(object):
         compo.connect("pad-added", self.on_pad)
         pipeline.set_state(gst.STATE_PAUSED)
         return pipeline
+
 
     def on_pad(self, comp, pad):
         convpad = self.landing_pad.get_compatible_pad(pad, pad.get_caps())
