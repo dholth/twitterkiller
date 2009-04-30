@@ -254,7 +254,9 @@ class Media(object):
     def redact(self, source_file, editlist=None):
         butts = [(False, 0)] + [(self.keyword in text, timestamp) for timestamp, text in self.bufferutts]
         import spanner
-        return self.edit(list(spanner.span(butts)))
+        spans = list((start, end) for omit, start, end in
+            spanner.span(butts) if not omit)
+        return self.edit(source_file, list((start, end) for omit, start, end in spanner.span(butts) if not omit))
 
     def edit(self, source_file, editlist=[]):
         """Edit source_file to include only segments from editlist,
