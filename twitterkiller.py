@@ -280,8 +280,8 @@ class Media(object):
     def redact(self, source_file):
 
         pipeline = gst.parse_launch("gnlcomposition name=compo !" 
-            + " identity single-segment=True name=landing !" 
-            + " audioconvert name=conv ! vorbisenc ! oggmux !" 
+            + " audioconvert name=landing ! identity single-segment=True !" 
+            + " audiorate ! vorbisenc ! oggmux !" 
             + " filesink name=redacted")
 
         product = pipeline.get_by_name("redacted")
