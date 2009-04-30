@@ -221,8 +221,6 @@ class Media(object):
 
         bus = self.pipeline.get_bus()
         bus.add_signal_watch()
-        bus.connect('message::application', self.application_message)
-        bus.connect('message::new-buffer', self.application_message)
         self.pipeline.set_state(gst.STATE_PAUSED) 
         return self.pipeline
 
@@ -253,34 +251,10 @@ class Media(object):
         struct.set_value('uttid', uttid)
         asr.post_message(gst.message_new_application(asr, struct))
 
-    def application_message(self, bus, msg):
-        """Receive application messages from the bus."""
-        msgtype = msg.structure.get_name()
-        if msgtype == 'result':
-            position = msg.src.query_position(gst.FORMAT_TIME)[0]
-            # are we getting alt_postion from fakesink which is updated
-            # after asr_result is sent?
-            alt_position = self.pipeline.query_position(gst.FORMAT_TIME)[0]
-            print position, alt_position
-            # misses the last utterance but synthesizes a first one:
-            self.final_result(self.last_hyp, self.last_uttid, alt_position)
-            self.last_hyp = msg.structure['hyp']
-            self.last_uttid = msg.structure['uttid']
-
-    def final_result(self, hyp, uttid, position):
-        """Insert the final result."""
-        positive = True
-        if not self.keyword in hyp.upper():
-            positive = False
-            hyp = hyp.lower()
-        # position is the beginning of the utterance:
-        self.utterances.append((positive, position, uttid, hyp))
-        print self.utterances[-1]
-
     def redact(self, source_file, editlist=None):
         butts = [(False, 0)] + [(self.keyword in text, timestamp) for timestamp, text in self.bufferutts]
         import spanner
-        return self.edit(spanner.span(butts))
+        return self.edit(list(spanner.span(butts)))
 
     def edit(self, source_file, editlist=[]):
         """Edit source_file to include only segments from editlist,
@@ -291,11 +265,11 @@ class Media(object):
         # identity single-segment=true ! " # buggy. should go right
         # before vorbisenc.
         pipeline = gst.parse_launch("gnlcomposition name=compo " 
-            + " audioconvert name=landing ! vorbisenc ! oggmux ! " 
+            + " audioconvert name=landing ! wavenc ! " 
             + " filesink name=redacted")
 
         product = pipeline.get_by_name("redacted")
-        product.set_property("location", os.path.splitext(source_file)[0] + ".redacted.ogg")
+        product.set_property("location", os.path.splitext(source_file)[0] + ".redacted.wav")
 
         compo = pipeline.get_by_name("compo")
         self.landing_pad = pipeline.get_by_name("landing")
@@ -315,7 +289,7 @@ class Media(object):
                 compo.add(filesrc)
                 elapsed += chunk_length
   
-        # It hangs if there are no spans.
+        # Hangs if there are no spans.
         
         compo.props.start = 0
         compo.props.duration = elapsed 
