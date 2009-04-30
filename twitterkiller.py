@@ -277,17 +277,17 @@ class Media(object):
         elapsed = 0
         for span in editlist:
             start, end = span
-                chunk_length = end - start
-                if chunk_length == 0:
-                    continue
-                filesrc = gst.element_factory_make("gnlfilesource")
-                filesrc.props.location = source_file
-                filesrc.props.start = elapsed
-                filesrc.props.duration = chunk_length
-                filesrc.props.media_start = start
-                filesrc.props.media_duration, chunk_length
-                compo.add(filesrc)
-                elapsed += chunk_length
+            chunk_length = end - start
+            if chunk_length == 0:
+                continue
+            filesrc = gst.element_factory_make("gnlfilesource")
+            filesrc.props.location = source_file
+            filesrc.props.start = elapsed
+            filesrc.props.duration = chunk_length
+            filesrc.props.media_start = start
+            filesrc.props.media_duration, chunk_length
+            compo.add(filesrc)
+            elapsed += chunk_length
   
         # Hangs if there are no spans.
         
