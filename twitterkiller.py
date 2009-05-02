@@ -48,14 +48,15 @@ class Main(object):
         self.aboutDialog.show_all()
 
     def about_hide(self, widget):
-        print "bye about"
         self.aboutDialog.hide()
 
     def setupWindow(self):
         self.wTree = gtk.glade.XML("twitterkiller.glade")
         self.window = self.wTree.get_widget("mainwindow")
-        self.aboutDialog = self.wTree.get_widget("aboutdialog")
         self.window.connect("destroy", self.destroy)
+        self.aboutDialog = self.wTree.get_widget("aboutdialog")
+        self.aboutDialog.connect("delete_event", 
+                self.aboutDialog.hide_on_delete)
         self.textview = self.wTree.get_widget("textview")
         self.textbuf = self.textview.get_buffer()
         self.statusbar = self.wTree.get_widget("statusbar")
@@ -68,7 +69,8 @@ class Main(object):
        
     def file_open(self, widget):
         """'Open' from the menu bar"""
-        self.wTree.get_widget("filechooserbutton").activate()
+        # Should use GtkAction instead of this hack:
+        self.wTree.get_widget("filechooserbutton").get_children()[0].clicked()
 
     def file_set(self, widget):
         self.wTree.get_widget("file_open").set_sensitive(False)
@@ -153,8 +155,8 @@ class Main(object):
             print "Redact Message", t
 
     def destroy(self, widget, data=None):
-        print "Goodbye"
         gtk.main_quit()
+
 
 class Media(object):
     def __init__(self):
