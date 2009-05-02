@@ -44,10 +44,10 @@ class Main(object):
 
         self.aboutTree = None
 
-    def about(self, widget):
+    def about(self, widget, data=None):
         self.aboutDialog.show_all()
 
-    def about_hide(self, widget):
+    def about_hide(self, widget, data=None):
         self.aboutDialog.hide()
 
     def setupWindow(self):
